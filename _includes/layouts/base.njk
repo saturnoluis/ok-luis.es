@@ -3,14 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="noindex, nofollow">
+		<link rel="stylesheet" href="/static/styles.css"/>
 		<title>{{ title }}</title>
 	</head>
 	<body>
-		<header>
-			<h1 style="color:blue">{{ title }}</h1>
-		</header>
 		<main>
-			{{ content | safe }}
+<!-- content start -->
+{{ content | safe }}
+<!-- content end -->
 		</main>
 	</body>
 </html>
