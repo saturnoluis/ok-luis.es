@@ -4,14 +4,24 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="robots" content="noindex, nofollow">
+
 		<link rel="stylesheet" href="/static/styles.css"/>
 		<title>{{ title }}</title>
 	</head>
 	<body>
-		<main>
-<!-- content start -->
-{{ content | safe }}
-<!-- content end -->
+		<main class="window">
+			<div class="window__inner">
+				<header class="window_title">
+					<div class="window_title__inner">
+						{{ title }}
+					</div>
+				</header>
+				<section class="window_content">
+					<div class="window_content__inner">
+						{{ content | safe }}
+					</div>
+				</section>
+			</div>
 		</main>
 	</body>
 </html>

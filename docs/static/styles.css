@@ -1,3 +1,39 @@
+* {
+	margin: 0;
+}
+
 body {
-	background: #666;
+	background: #505050;
+}
+
+.window {
+	width: 640px;
+	min-height: 240px;
+	margin: 130px auto;
+
+	background: #333;
+	color: white;
+
+	border: 3px solid #1a1a1a;
+	box-shadow: 6px 6px #1a1a1a;
+}
+
+.window__inner {
+	box-shadow: inset 3px 3px #4d4d4d;
+	min-height: 240px;
+	height: 100%;
+}
+
+.window_title {
+	padding: 6px;
+	padding-right: 3px;
+}
+
+.window_title__inner {
+	background: #1a1a1a;
+	min-height: 48px;
+}
+
+.window_content {
+	padding: 6px;
 }
