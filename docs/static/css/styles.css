@@ -1,0 +1,161 @@
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+* Custom fonts
+* ************/
+
+@font-face {
+	font-family: 'Deluxe';
+	src: url('/static/fonts/deluxe.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+* Custom properties
+* *****************/
+
+body.dark {
+	--color: white;
+}
+
+body.light {
+	--color: black;
+}
+
+/*
+* Common elements
+* **************/
+
+body {
+	background: #505050;
+}
+
+path,
+polygon {
+	fill: var(--color);
+}
+
+/*
+* Window component
+* ****************/
+
+.window {
+	background-color: #333;
+	border: 3px solid #1a1a1a;
+	box-shadow: 6px 6px #1a1a1a;
+	color: white;
+	margin: 130px auto;
+	min-height: 240px;
+	width: 640px;
+}
+
+.window__inner {
+	box-shadow: inset 3px 3px #4d4d4d;
+	min-height: 240px;
+	height: 100%;
+}
+
+/* Window title bar */
+
+.window_title {
+	padding: 6px;
+	padding-right: 3px;
+	font-family: 'Deluxe', sans-serif;
+}
+
+.window_title__inner {
+	background-color: #1a1a1a;
+	min-height: 36px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px;
+}
+
+/* Window content */
+
+.window_content {
+	padding: 6px;
+}
+
+/*
+* WindowButton component
+* **********************/
+
+.window_button {
+	align-items: center;
+	background-color: #333;
+	border: none;
+	box-shadow: inset 3px 3px #4d4d4d;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	font-family: 'Deluxe', sans-serif;
+	height: 36px;
+	justify-content: center;
+	min-width: 39px;
+	outline: none;
+	padding: 9px;
+	text-decoration: none;
+}
+
+.window_button:active {
+	background-color: #222;
+	box-shadow: inset -3px -3px #4d4d4d;
+}
+
+.window_button__group {
+	display: flex;
+	flex-direction: row;
+	gap: 6px;
+}
