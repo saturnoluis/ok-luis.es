@@ -23,25 +23,31 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -59,6 +65,18 @@ table {
 }
 
 /*
+* Common elements
+* **************/
+
+html {
+	font-size: 2px;
+}
+
+body {
+	background: #505050;
+}
+
+/*
 * Custom properties
 * *****************/
 
@@ -71,60 +89,56 @@ body.light {
 }
 
 /*
-* Common elements
-* **************/
-
-body {
-	background: #505050;
-}
-
-path,
-polygon {
-	fill: var(--color);
-}
-
-/*
 * Window component
 * ****************/
 
 .window {
 	background-color: #333;
-	border: 3px solid #1a1a1a;
-	box-shadow: 6px 6px #1a1a1a;
+	border: 1rem solid #1a1a1a;
+	box-shadow: 2rem 2rem #1a1a1a;
 	color: white;
+
 	margin: 130px auto;
-	min-height: 240px;
-	width: 640px;
+	width: 300rem;
 }
 
 .window__inner {
-	box-shadow: inset 3px 3px #4d4d4d;
-	min-height: 240px;
+	box-shadow: inset 1rem 1rem #4d4d4d;
+	min-height: 80rem;
 	height: 100%;
 }
 
 /* Window title bar */
 
 .window_title {
-	padding: 6px;
-	padding-right: 3px;
+	padding: 2rem;
+	padding-right: 1rem;
 	font-family: 'Deluxe', sans-serif;
 }
 
 .window_title__inner {
+	align-items: center;
 	background-color: #1a1a1a;
-	min-height: 36px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
-	padding: 6px;
+	min-height: 16rem;
+	padding: 2rem;
+}
+
+.window_title__inner span {
+	font-size: 8rem;
 }
 
 /* Window content */
 
 .window_content {
-	padding: 6px;
+	padding: 2rem;
+}
+
+.window_content__inner {
+	padding: 2rem;
+	font-size: 9rem;
 }
 
 /*
@@ -135,27 +149,36 @@ polygon {
 	align-items: center;
 	background-color: #333;
 	border: none;
-	box-shadow: inset 3px 3px #4d4d4d;
+	box-shadow: inset 1rem 1rem #4d4d4d;
 	box-sizing: border-box;
 	color: #fff;
 	cursor: pointer;
 	display: flex;
 	font-family: 'Deluxe', sans-serif;
-	height: 36px;
+	height: 16rem;
 	justify-content: center;
-	min-width: 39px;
 	outline: none;
-	padding: 9px;
 	text-decoration: none;
+	width: 16rem;
+}
+
+.window_button img {
+	display: block;
+	height: 16rem;
+	opacity: .3;
+}
+
+.window_button:hover img {
+	opacity: 1;
 }
 
 .window_button:active {
 	background-color: #222;
-	box-shadow: inset -3px -3px #4d4d4d;
+	box-shadow: inset -1rem -1rem #4d4d4d;
 }
 
 .window_button__group {
 	display: flex;
 	flex-direction: row;
-	gap: 6px;
+	gap: 2rem;
 }
