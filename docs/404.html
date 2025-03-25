@@ -9,48 +9,18 @@
 		<title>ok-Luis.es - 404</title>
 	</head>
 	<body class="dark">
-		<main class="window">
-			<div class="window__inner">
-				<header class="window_title">
-					<div class="window_title__inner">
-						<div class="window_button__group">
-							<a
-								class="window_button"
-								href="/">
-								<img alt="Close" src="/static/icons/x.svg">
-							</a>
-							<button
-								class="window_button"
-								id="window_button--hide">
-								<img alt="Hide" src="/static/icons/-.svg">
-							</button>
-						</div>
-						<span>
-							ok-Luis.es - 404
-						</span>
-						<div class="window_button__group">
-							<button
-								class="window_button"
-								id="window_button--theme-switcher">
-								<img alt="Night mode On" src="/static/icons/moon.svg">
-							</button>
-						</div>
-					</div>
-				</header>
-				<section class="window_content">
-					<div class="window_content__inner">
-						<h1>404 Upsie daisy</h1>
+		<ok-window title="Hello world">
+			HOLA MUNDO
+		</ok-window>
 
-					</div>
-				</section>
-			</div>
-		</main>
+		<div style="font-size: 12rem">
+			 <h1>404 Upsie daisy</h1>
 
-		<script>
-		document.getElementById("window_button--hide")
-			.addEventListener("click", function() {
-				alert("Hide");
-			});
+		</div>
+
+		<script
+			type="module"
+			src="/static/js/custom-elements/ok-window.js">
 		</script>
 	</body>
 </html>

@@ -31,4 +31,8 @@ técnicos necesarios para entender a profundidad las herramientas y las
 tecnologías, pero sin olvidar que el proceso puede ser divertido. El objetivo
 es que al final de cada lección no sólo hayas aprendido una nueva herramienta
 y sus fundamentos técnicos pero también obtengas un nuevo recurso para crear y
-expresar tu creatividad a través del código. 
+expresar tu creatividad a través del código.
+
+--- 
+
+
