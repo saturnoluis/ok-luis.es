@@ -1,15 +1,19 @@
 {
-	"name": "ok-luis.es",
-	"type": "module",
-	"version": "1.0.0",
-	"author": "Luis Saturno",
-	"license": "GPL-3.0-or-later",
-	"description": "",
-	"scripts": {
-		"start": "eleventy --serve",
-		"build": "eleventy"
-	},
-	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0"
-	}
+  "name": "ok-luis.es",
+  "type": "module",
+  "version": "1.0.0",
+  "author": "Luis Saturno",
+  "license": "GPL-3.0-or-later",
+  "description": "",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+	"build:pdf": "playwright test"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.13",
+    "playwright": "^1.51.1"
+  }
 }
