@@ -5,7 +5,7 @@ body {
 main.document {
 	max-width: 180mm;
 	margin: 0 auto;
-	background: red;
+	background: lightgray;
 }
 
 h1, h2, h3, h4 {

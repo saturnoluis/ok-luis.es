@@ -1,3 +1,8 @@
+---
+title: Luis-Saturno_cv_en.pdf
+layout: layouts/cv.njk
+---
+
 # Luis Saturno
 
 **Software Developer and Engineer**  
