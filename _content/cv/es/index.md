@@ -15,7 +15,7 @@ industria de software. Me especializo en el uso de estándares web y de
 frameworks modernos como SvelteKit y Next.js.
 
 Tengo experiencia trabajando tanto de manera independiente como en equipos
-grandes, ésto me ha enseñado a ser un profesional versátil y adaptable al
+grandes, esto me ha enseñado a ser un profesional versátil y adaptable al
 cambio. Me preocupo por escribir código limpio, ordenado y bien documentado, lo
 que facilita el trabajo en equipo y mejora la mantenibilidad a largo plazo.
 Además, tengo un enfoque analítico que me permite identificar y resolver errores
@@ -80,23 +80,23 @@ prueba.
 ### Desarrollador Frontend Senior en [Wordly. Inc.](https://www.wordly.ai/)
 *Los Altos, California, EE.UU.* - *Noviembre 2021 - Enero 2023*
 
-En Wordly.ia colaboré en el desarollo y mantenimiento de la interfaz de usuario
+En Wordly.ia colaboré en el desarrollo y mantenimiento de la interfaz de usuario
 de un conjunto de herramientas web potenciadas por Inteligencia Artificial,
 diseñadas para ofrecer traducción bidireccional en vivo de diversos idiomas para
 presentaciones virtuales, webinarios, conferencias y videos.
 
 #### Principales responsabilidades:
 
-* **Desarrollo de nuevas funcionalidades:** Mantenimiento y desarollo de nuevas
+* **Desarrollo de nuevas funcionalidades:** Mantenimiento y desarrollo de nuevas
 características en tres proyectos principales: Una extensión de Zoom en Angular
 para añadir traducciones en vivo a cualquier conferencia, una extensión de
 Chrome y Firefox en React para traducir videos en tiempo real en páginas web,
 una plataforma web también hecha en react para la gestión de cuentas de usuario
 y contratación de servicios.
 * **Resolución de errores:** Asignación de tareas de corrección de errores en
-las aplicaciones existentes. Enncontrando errores y desarrollando soluciones
+las aplicaciones existentes. Encontrando errores y desarrollando soluciones
 permanentes asegurándome de escribir unit-tests cuando era posible para mitigar
-la re-ocurrencia de los mismos y escribiendo documentación "post-mortem".
+la recurrencia de los mismos y documentando casos "post-mortem".
 * **Colaboración efectiva en un entorno ágil:** Participé activamente en la
 metodología Kanban, sincronizándome diariamente con los líderes de equipo para
 organizar prioridades y asegurar la entrega eficiente de las tareas. A pesar de
@@ -108,13 +108,13 @@ con los plazos de entrega.
 - React, Angular
 - Material UI
 - Axios
-- Jest (for unit testing)
+- Jest (unit testing)
 - Git, Jira, Notion
 
 ---
 
 ### Desarrollador Frontend Senior en [MercadoLibre](https://mercadolibre.com.ar)
-*Buenos Aires, Argentina* - *December 2020 - November 2021*
+*Buenos Aires, Argentina* - *Diciembre 2020 - Noviembre 2021*
 
 Desarrollador frontend senior en una de las plataformas de comercio electrónico
 más grandes de Latinoamérica, formé parte del equipo responsable del portal de
@@ -139,7 +139,7 @@ aplicación, el reconocimiento de alarmas y la creación de informes detallados
 para los equipos responsables, con el objetivo de asegurar una resolución rápida
 de incidentes y minimizar el impacto en los usuarios.
 
-#### Stack utilizado:
+#### Stack utilizado
 
 - React, Next.js
 - Node.js
@@ -197,11 +197,13 @@ Venezuela
 
 ---
 
-### Intereses Soy muy entusiasta de Linux y todo lo que tenga que ver con FOSS
+## Intereses
+
+Soy un gran entusiasta de Linux y todo lo que tenga que ver con FOSS
 (Software Libre y de Código Abierto). Me encanta ver películas, especialmente de
 ciencia ficción; mi favorita es *Matrix*. Estoy felizmente casado desde hace 10
-años. Tengo un hermoso perro llamado Napoleón. Me encanta salir a comer y estar
-al aire libre.
+años. Tengo un hermoso perro llamado Napoleón. Disfruto salir a comer y estar
+al aire libre, o quedarme en casa jugando Minecraft.
 
 ## Sobre Mí
 
