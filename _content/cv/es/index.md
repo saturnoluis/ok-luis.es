@@ -3,10 +3,17 @@ title: Luis-Saturno_cv_es.pdf
 layout: layouts/cv.njk
 ---
 
+![Luis Saturno's Avatar](/static/img/avatar.jpg)
+{.avatar}
+
 # Luis Saturno
 
-**Desarrollador de Software**  
-Barcelona, Spain •
+---{.clear}
+
+**Desarrollador de Software Full-Stack**
+{.title}
+
+Barcelona, España •
 [saturno.luis@gmail.com](mailto:saturno.luis@gmail.com) •
 [LinkedIn](https://www.linkedin.com/in/saturnoluis) •
 [GitHub](https://github.com/saturnoluis)
@@ -29,20 +36,14 @@ de manera eficiente.
 Me caracterizo por ser responsable, de mente abierta, honesto, colaborativo y
 apasionado por el código.
 
----
-
-## Mi stack actual
+## Mi stack actual{.window}
 
 - **Lenguajes**: JavaScript, TypeScript, HTML5, CSS3.
 - **Frameworks y herramientas**: SvelteKit, Next.js, Tailwind, Node.js, Vitest, Playwright.
 - **Entorno y utilidades**: Git, Bash, Neovim, tmux, Fedora Linux.
 - **Prácticas de desarrollo**: Agile, Unit Testing, GitHub CI/CD.
 
----
-
 ## Experiencia
-
----
 
 ### Desarrollador Frontend Senior y líder técnico en [DC Connected Car GmbH](https://www.dc-connected.de/en)
 *Alemania* — *Mayo 2023 - Presente*  

@@ -6,6 +6,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ '_static/files': 'static/files' });
 	eleventyConfig.addPassthroughCopy({ '_static/fonts': 'static/fonts' });
 	eleventyConfig.addPassthroughCopy({ '_static/icons': 'static/icons' });
+	eleventyConfig.addPassthroughCopy({ '_static/img': 'static/img' });
 	eleventyConfig.addPassthroughCopy({ '_static/js': 'static/js' });
 
 	eleventyConfig.addPassthroughCopy('CNAME');

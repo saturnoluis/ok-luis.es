@@ -6,6 +6,7 @@ layout: layouts/cv.njk
 # Luis Saturno
 
 **Software Developer and Engineer**  
+
 Barcelona, Spain •
 [saturno.luis@gmail.com](mailto:saturno.luis@gmail.com) •
 [LinkedIn](https://www.linkedin.com/in/saturnoluis) •
@@ -13,7 +14,7 @@ Barcelona, Spain •
 
 ---
 
-## Summary
+## Summary{.hero}
 
 Frontend and full-stack developer with over 10 years of experience in the
 software industry. I specialize in web standards and modern frameworks like

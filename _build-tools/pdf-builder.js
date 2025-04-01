@@ -16,10 +16,10 @@ for (const lang of langs) {
 			path: `_static/files/${filename}`,
 			format: 'A4',
 			margin: {
-				top: '20mm',
-				bottom: '20mm',
-				left: '15mm',
-				right: '15mm'
+				top: '15mm',
+				bottom: '15mm',
+				left: '0mm',
+				right: '0mm'
 			},
 			printBackground: true,
 		});
