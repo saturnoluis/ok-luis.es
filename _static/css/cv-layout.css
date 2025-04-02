@@ -7,8 +7,50 @@ body {
 
 	--blue: #262873;
 	--gray: #b0b3b8;
+	--dark-gray: #808388;
 	--light-gray: #e0e3e8;
 	--aqua: #00a8a8;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	width: 160mm;
+	margin: 0 auto;
+}
+
+header a {
+	padding: 6pt;
+	padding-left: 25pt;
+	font-family: 'Deluxe', sans-serif;
+	text-decoration: none;
+	line-height: 1em;
+	border: 1pt solid var(--blue);
+	color: var(--blue);
+	background-color: var(--gray);
+	background-image: url('/static/icons/download.svg');
+	background-repeat: no-repeat;
+	background-position: 8pt;
+	box-shadow:
+		2pt 2pt var(--blue),
+		inset 1pt 1pt var(--light-gray);
+}
+
+header a:hover {
+	background-color: var(--light-gray);
+}
+
+header a:active {
+	background-color: var(--dark-gray);
+	box-shadow:
+		1pt 1pt var(--blue),
+		inset -1pt -1pt var(--light-gray);
+}
+
+@media print {
+	header {
+		display: none !important;
+	}
 }
 
 .document {
