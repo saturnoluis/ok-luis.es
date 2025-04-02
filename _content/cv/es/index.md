@@ -223,3 +223,9 @@ salir a comer y conocer la ciudad.
 * **Fecha de nacimiento:** 13 de Marzo, 1986
 
 ---{.decorative-footer}
+
+> Este CV fue creado únicamente con HTML y CSS vanilla. El contenido fue
+> escrito en formato Markdown y generado con Eleventy (11ty). El archivo PDF fue
+> generado automáticamente con Playwright. Puedes ver el código fuente en el
+> repositorio [aquí](https://github.com/saturnoluis/ok-luis.es).
+

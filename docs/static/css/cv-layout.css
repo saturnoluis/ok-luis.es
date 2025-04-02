@@ -101,6 +101,12 @@ body {
 	margin: 1.1em 0;
 }
 
+.document blockquote {
+	font-size: 7pt;
+	line-height: 1em;
+	margin-right: 3em;
+}
+
 /* Custom attributes */
 
 .document .clear {

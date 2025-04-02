@@ -14,7 +14,8 @@ for (const lang of langs) {
 
 		await page.pdf({
 			path: `_static/files/${filename}`,
-			format: 'A4',
+			width: '210mm',
+			height: '210mm',
 			margin: {
 				top: '25mm',
 				bottom: '15mm',

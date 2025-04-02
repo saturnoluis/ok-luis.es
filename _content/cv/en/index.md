@@ -3,18 +3,22 @@ title: Luis-Saturno_cv_en.pdf
 layout: layouts/cv.njk
 ---
 
+![Luis Saturno's Avatar](/static/img/avatar.jpg)
+{.avatar}
+
 # Luis Saturno
 
+---{.clear}
+
 **Software Developer and Engineer**  
+{.title}
 
 Barcelona, Spain •
 [saturno.luis@gmail.com](mailto:saturno.luis@gmail.com) •
 [LinkedIn](https://www.linkedin.com/in/saturnoluis) •
 [GitHub](https://github.com/saturnoluis)
 
----
-
-## Summary{.hero}
+## Summary
 
 Frontend and full-stack developer with over 10 years of experience in the
 software industry. I specialize in web standards and modern frameworks like
@@ -29,20 +33,15 @@ identify and solve issues efficiently.
 I’m responsible, open-minded, honest, collaborative, and passionate about
 coding.
 
----
 
-## My Current Tech Stack
+## My Current Tech Stack{.window}
 
 * **Languages:** JavaScript, TypeScript, HTML5, CSS3.
 * **Frameworks & Tools:** SvelteKit, Next.js, Tailwind, Node.js, Vitest, Playwright.
 * **Environment & Utilities:** Git, Bash, Neovim, tmux, Fedora Linux.
 * **Development Practices:** Agile, Unit Testing, GitHub CI/CD.
 
----
-
-## Experience
-
----
+## Experience *1/4* {.xp}
 
 ### Senior Frontend Developer & Tech Lead at [DC Connected Car GmbH](https://www.dc-connected.de/en)
 *Germany* — *May 2023 - Present*  
@@ -77,6 +76,8 @@ and managing deployments in development and testing environments.
 
 ---
 
+## Experience *2/4* {.xp}
+
 ### Senior Frontend Developer at [Wordly. Inc.](https://www.wordly.ai/)
 *Los Altos, California, EE.UU.* - *November 2021 - January 2023*
 
@@ -109,6 +110,8 @@ met deadlines consistently.
 
 ---
 
+## Experience *3/4* {.xp}
+
 ### Senior Frontend Developer at [MercadoLibre](https://mercadolibre.com.ar)
 *Buenos Aires, Argentina* - *December 2020 - November 2021*
 
@@ -137,6 +140,8 @@ ensure quick issue resolution and minimize user impact.
 - HTML5, CSS3, SASS
 
 ---
+
+## Experience *4/4* {.xp}
 
 ### Senior Frontend Developer & Tech Lead at [Globant](https://www.globant.com/)
 *Buenos Aires, Argentina* - *May 2016 - December 2020*
@@ -169,33 +174,40 @@ knowledge and fostering a collaborative work environment.
 
 ---
 
-## Education
+## Education {.xp}
 
 **Instituto de Diseño de Valencia**
-*Graphic Design (2009 – 2012)*
-Venezuela
+Graphic Design (2009 – 2012)<br>
+*Venezuela*
 
 **Universidad José Antonio Páez**
-*Bachelor’s Degree in Computer Engineering (2003 – 2008)*
-Venezuela
+Bachelor’s Degree in Computer Engineering (2003 – 2008)<br>
+*Venezuela*
 
 **Universidad José Antonio Páez**
-*Diploma in Web Application Development (2005 – 2006)*
-Venezuela
-
----
+Diploma in Web Application Development (2005 – 2006)<br>
+*Venezuela*
 
 ## Interests
 
-I’m passionate about Linux and everything related to FOSS (Free and Open-Source
-Software). I love movies, especially sci-fi, The Matrix is my all-time favorite.
-I’ve been happily married for 10 years. I have a wonderful dog named Napoleón. I
-enjoy going out for good food and spending time outdoors, or just staying home
-playing Minecraft.
+’m a big Linux enthusiast and passionate about everything related to Free and
+Open-Source Software. I love watching movies, especially sci-fi—The Matrix is my
+all-time favorite.
+
+I’ve been happily married for 10 years. My wife and I lived in Argentina for
+almost nine years, where I learned to drink mate, make pottery, and where our
+dog, Napoleón, was born. Now we live in Barcelona, where we enjoy going out to
+eat and exploring the city.
 
 ## About Me
 
-**Full name:** Luis José Saturno Rueda  
-**Nationality:** Venezuelan
-**Date of birth:** March 13th, 1986
+* **Full name:** Luis José Saturno Rueda  
+* **Nationality:** Venezuelan
+* **Date of birth:** March 13th, 1986
 
+---{.decorative-footer}
+
+> This CV was built using only vanilla HTML and CSS. The content was written in
+> Markdown and generated with Eleventy (11ty). The PDF file was automatically
+> created using Playwright. You can check out the source code in the repository
+> [here](https://github.com/saturnoluis/ok-luis.es).
