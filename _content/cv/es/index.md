@@ -18,8 +18,6 @@ Barcelona, España •
 [LinkedIn](https://www.linkedin.com/in/saturnoluis) •
 [GitHub](https://github.com/saturnoluis)
 
----
-
 ## Resumen
 
 Desarrollador frontend y full-stack con más de 10 años de experiencia en la
@@ -43,7 +41,7 @@ apasionado por el código.
 - **Entorno y utilidades**: Git, Bash, Neovim, tmux, Fedora Linux.
 - **Prácticas de desarrollo**: Agile, Unit Testing, GitHub CI/CD.
 
-## Experiencia
+## Experiencia *1/4* {.xp}
 
 ### Desarrollador Frontend Senior y líder técnico en [DC Connected Car GmbH](https://www.dc-connected.de/en)
 *Alemania* — *Mayo 2023 - Presente*  
@@ -83,6 +81,8 @@ prueba.
 
 ---
 
+## Experiencia *2/4* {.xp}
+
 ### Desarrollador Frontend Senior en [Wordly. Inc.](https://www.wordly.ai/)
 *Los Altos, California, EE.UU.* - *Noviembre 2021 - Enero 2023*
 
@@ -119,6 +119,8 @@ con los plazos de entrega.
 
 ---
 
+## Experiencia *3/4* {.xp}
+
 ### Desarrollador Frontend Senior en [MercadoLibre](https://mercadolibre.com.ar)
 *Buenos Aires, Argentina* - *Diciembre 2020 - Noviembre 2021*
 
@@ -152,6 +154,8 @@ de incidentes y minimizar el impacto en los usuarios.
 - HTML5, CSS3, SASS
 
 ---
+
+## Experiencia *4/4* {.xp}
 
 ### Globant - Desarrollador Frontend y Líder Técnico en [Globant](https://www.globant.com/)
 *Buenos Aires, Argentina* - *Mayo 2016 - Diciembre 2020*
@@ -187,33 +191,35 @@ colaborativo.
 
 ---
 
-## Educación
+## Educación {.xp}
 
 **Instituto de Diseño de Valencia**  
-*Diseñador Gráfico (2009 – 2012)*  
-Venezuela
+Diseñador Gráfico (2009 – 2012)<br>
+*Venezuela*
 
 **Universidad José Antonio Páez**  
-*Licenciatura en Ingeniería en Computación (2003 – 2008)*  
-Venezuela
+Licenciatura en Ingeniería en Computación (2003 – 2008)<br>
+*Venezuela*
 
 **Universidad José Antonio Páez**  
-*Diplomado en Desarrollo de Aplicaciones Web (2005 – 2006)*  
-Venezuela
-
----
+Diplomado en Desarrollo de Aplicaciones Web (2005 – 2006)<br>
+*Venezuela*
 
 ## Intereses
 
-Soy un gran entusiasta de Linux y todo lo que tenga que ver con FOSS
-(Software Libre y de Código Abierto). Me encanta ver películas, especialmente de
-ciencia ficción; mi favorita es *Matrix*. Estoy felizmente casado desde hace 10
-años. Tengo un hermoso perro llamado Napoleón. Disfruto salir a comer y estar
-al aire libre, o quedarme en casa jugando Minecraft.
+Soy un gran entusiasta de Linux y todo lo que tenga que ver con Software Libre.
+Me encanta ver películas, especialmente de ciencia ficción; mi favorita es
+*Matrix*.
+
+Estoy felizmente casado desde hace 10 años, viví con mi esposa casí 9
+años en Argentina, donde aprendí a tomar mate, hacer cerámica y donde nació
+nuestro perro llamado Napoleón. Ahora vivimos en Barcelona donde disfrutamos
+salir a comer y conocer la ciudad.
 
 ## Sobre Mí
 
-**Nombre completo:** Luis José Saturno Rueda  
-**Nacionalidad:** Venezolano  
-**Fecha de nacimiento:** 13 de Marzo, 1986
+* **Nombre completo:** Luis José Saturno Rueda  
+* **Nacionalidad:** Venezolano  
+* **Fecha de nacimiento:** 13 de Marzo, 1986
 
+---{.decorative-footer}

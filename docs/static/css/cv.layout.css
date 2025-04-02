@@ -8,6 +8,7 @@ body {
 	--blue: #262873;
 	--gray: #b0b3b8;
 	--light-gray: #d0d3d8;
+	--aqua: #00a8a8;
 }
 
 .document {
@@ -91,3 +92,4 @@ body {
 	background: var(--light-gray);
 	box-shadow: 2pt 2pt var(--blue);
 }
+
