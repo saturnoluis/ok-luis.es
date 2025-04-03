@@ -5,11 +5,11 @@ body {
 	font-family: 'OpenSans', sans-serif;
 	padding-top: 5mm;
 
-	--blue: #262873;
+	--blue: #366b6b;
 	--gray: #b0b3b8;
 	--dark-gray: #808388;
 	--light-gray: #e0e3e8;
-	--aqua: #00a8a8;
+	--aqua: #55aaaa;
 }
 
 header {
@@ -97,6 +97,10 @@ header a:active {
 	padding: 0;
 }
 
+.document a {
+	color: var(--aqua);
+}
+
 .document h1 {
 	font-family: 'Deluxe', sans-serif;
 	font-size: 18pt;
@@ -172,7 +176,7 @@ header a:active {
 
 .document .avatar {
 	float: left;
-	width: 30mm;
+	width: 34mm;
 	background: var(--gray);
 	padding: 3pt;
 	box-shadow: 2pt 2pt var(--blue);
