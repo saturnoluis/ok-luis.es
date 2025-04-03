@@ -103,12 +103,12 @@ header a:active {
 
 .document h1 {
 	font-family: 'Deluxe', sans-serif;
-	font-size: 18pt;
+	font-size: 22pt;
 	width: 50mm;
 	line-height: 1.2em;
 	color: var(--blue);
 	float: left;
-	padding: 5mm;
+	padding: 8mm 4mm;
 }
 
 .document h2 {
