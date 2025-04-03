@@ -190,7 +190,7 @@ Diploma in Web Application Development (2005 – 2006)<br>
 
 ## Interests
 
-’m a big Linux enthusiast and passionate about everything related to Free and
+I’m a big Linux enthusiast and passionate about everything related to Free and
 Open-Source Software. I love watching movies, especially sci-fi—The Matrix is my
 all-time favorite.
 
