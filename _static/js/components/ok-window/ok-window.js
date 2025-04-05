@@ -2,12 +2,59 @@ import { LitElement, html, css } from '/static/js/lib/lit-core.min.js';
 
 class OkWindow extends LitElement {
 	static properties = {
-		title: { type: String }
+		title: { type: String },
+		maximized: {
+			type: Boolean,
+			reflect: true,
+		}
 	};
 
-	static styles = css`
+	constructor() {
+		super();
+		this.maximized = false;
+	}
 
-:host {
+	static styles = getStyles();
+
+	render() {
+		return html`
+
+<main class=${this.maximized ? 'window maximized' : 'window'}>
+	<div class="window__inner">
+		<header class="title">
+			<div class="title__inner">
+				<div class="window_button__group">
+					<a class="window_button" href="/">
+						<img alt="Close" src="/static/icons/x.svg">
+					</a>
+					<button class="window_button" id="window_button--hide">
+						<img alt="Hide" src="/static/icons/-.svg">
+					</button>
+				</div>
+				<span>${this.title}</span>
+				<div class="window_button__group">
+					<button class="window_button" id="window_button--theme-switcher">
+						<img alt="Night mode On" src="/static/icons/moon.svg">
+					</button>
+				</div>
+			</div>
+		</header>
+		<section class="window_content">
+			<div class="window_content__inner">
+				<slot></slot>
+			</div>
+		</section>
+	<div>
+</main>
+`;
+	}
+}
+
+customElements.define("ok-window", OkWindow);
+
+function getStyles() { return css`
+
+.window {
 	background-color: var(--background);
 	border: 1rem solid #1a1a1a;
 	box-shadow: 2rem 2rem #1a1a1a;
@@ -89,38 +136,5 @@ class OkWindow extends LitElement {
 	flex-direction: row;
 	gap: 2rem;
 }
-	`;
 
-	render() {
-		return html`
-
-<div class="window__inner">
-	<header class="title">
-		<div class="title__inner">
-			<div class="window_button__group">
-				<a class="window_button" href="/">
-					<img alt="Close" src="/static/icons/x.svg">
-				</a>
-				<button class="window_button" id="window_button--hide">
-					<img alt="Hide" src="/static/icons/-.svg">
-				</button>
-			</div>
-			<span>${this.title}</span>
-			<div class="window_button__group">
-				<button class="window_button" id="window_button--theme-switcher">
-					<img alt="Night mode On" src="/static/icons/moon.svg">
-				</button>
-			</div>
-		</div>
-	</header>
-	<section class="window_content">
-		<div class="window_content__inner">
-			<slot></slot>
-		</div>
-	</section>
-</div>
-`;
-	}
-}
-
-customElements.define("ok-window", OkWindow);
+`};
