@@ -33,18 +33,18 @@ identify and solve issues efficiently.
 I’m responsible, open-minded, honest, collaborative, and passionate about
 coding.
 
-
 ## My Current Tech Stack{.window}
 
-* **Languages:** JavaScript, TypeScript, HTML5, CSS3.
-* **Frameworks & Tools:** SvelteKit, Next.js, Tailwind, Node.js, Vitest, Playwright.
-* **Environment & Utilities:** Git, Bash, Neovim, tmux, Fedora Linux.
-* **Development Practices:** Agile, Unit Testing, GitHub CI/CD.
+- **Languages:** JavaScript, TypeScript, HTML5, CSS3.
+- **Frameworks & Tools:** SvelteKit, Next.js, Tailwind, Node.js, Vitest, Playwright.
+- **Environment & Utilities:** Git, Bash, Neovim, tmux, Fedora Linux.
+- **Development Practices:** Agile, Unit Testing, GitHub CI/CD.
 
-## Experience *1/4* {.xp}
+## Experience _1/4_ {.xp}
 
 ### Senior Frontend Developer & Tech Lead at [DC Connected Car GmbH](https://www.dc-connected.de/en)
-*Germany* — *May 2023 - Present*  
+
+_Germany_ — _May 2023 - Present_
 
 Lead frontend developer for a web application in the automotive sector powered
 by Artificial Intelligence. The platform provides predictive diagnostics and
@@ -54,16 +54,16 @@ breakdowns, reducing waiting times and support costs for drivers.
 
 #### Main Responsibilities
 
-* **UI Architecture & Development:** Led the selection and implementation of
-SvelteKit as the main framework, prioritizing web standards, compatibility with
-a full-stack team, and server-side rendering. I also develop and maintain the
-UI, optimizing performance and usability.
-* **Mentoring Junior Developers:** I act as a mentor and technical reference for
-junior developers, providing guidance on SvelteKit, efficient Git usage, best
-development practices, and code documentation.
-* **Maintaining UI Repositories:** Responsible for reviewing code contributions
-from other developers, ensuring quality, integrating changes into main branches,
-and managing deployments in development and testing environments.
+- **UI Architecture & Development:** Led the selection and implementation of
+  SvelteKit as the main framework, prioritizing web standards, compatibility with
+  a full-stack team, and server-side rendering. I also develop and maintain the
+  UI, optimizing performance and usability.
+- **Mentoring Junior Developers:** I act as a mentor and technical reference for
+  junior developers, providing guidance on SvelteKit, efficient Git usage, best
+  development practices, and code documentation.
+- **Maintaining UI Repositories:** Responsible for reviewing code contributions
+  from other developers, ensuring quality, integrating changes into main branches,
+  and managing deployments in development and testing environments.
 
 #### Tech Stack
 
@@ -76,10 +76,11 @@ and managing deployments in development and testing environments.
 
 ---
 
-## Experience *2/4* {.xp}
+## Experience _2/4_ {.xp}
 
 ### Senior Frontend Developer at [Wordly. Inc.](https://www.wordly.ai/)
-*Los Altos, California, EE.UU.* - *November 2021 - January 2023*
+
+_Los Altos, California, EE.UU._ - _November 2021 - January 2023_
 
 At Wordly.ai, I contributed to the development and maintenance of a suite of
 AI-powered web tools designed to provide bidirectional live translation for
@@ -87,18 +88,18 @@ virtual presentations, webinars, conferences, and videos.
 
 #### Main Responsibilities
 
-* **Feature Development:** Maintained and developed new features across three
-main projects: a Zoom extension built in Angular for adding live translations to
-meetings, a Chrome and Firefox extension in React for real-time video
-translation on web pages, and a React-based web platform for user account
-management and service subscriptions.
-* **Bug Fixing & Debugging:** Assigned to error resolution tasks, identifying
-and implementing permanent solutions while ensuring unit tests were written when
-possible to prevent regressions. I also documented "post-mortem" cases.
-* **Agile Collaboration:** Worked within a Kanban methodology, synchronizing
-daily with team leads to organize priorities and ensure efficient task delivery.
-Despite working remotely, I maintained smooth communication with the team and
-met deadlines consistently.
+- **Feature Development:** Maintained and developed new features across three
+  main projects: a Zoom extension built in Angular for adding live translations to
+  meetings, a Chrome and Firefox extension in React for real-time video
+  translation on web pages, and a React-based web platform for user account
+  management and service subscriptions.
+- **Bug Fixing & Debugging:** Assigned to error resolution tasks, identifying
+  and implementing permanent solutions while ensuring unit tests were written when
+  possible to prevent regressions. I also documented "post-mortem" cases.
+- **Agile Collaboration:** Worked within a Kanban methodology, synchronizing
+  daily with team leads to organize priorities and ensure efficient task delivery.
+  Despite working remotely, I maintained smooth communication with the team and
+  met deadlines consistently.
 
 #### Tech Stack
 
@@ -110,10 +111,11 @@ met deadlines consistently.
 
 ---
 
-## Experience *3/4* {.xp}
+## Experience _3/4_ {.xp}
 
 ### Senior Frontend Developer at [MercadoLibre](https://mercadolibre.com.ar)
-*Buenos Aires, Argentina* - *December 2020 - November 2021*
+
+_Buenos Aires, Argentina_ - _December 2020 - November 2021_
 
 Senior frontend developer at one of the largest e-commerce platforms in Latin
 America. I was part of the team responsible for the user help portal,
@@ -124,14 +126,14 @@ post-mortem reporting.
 
 #### Main Responsibilities
 
-* **Developing New Features for the Help Center:** Implemented new FAQ pages and
-features to improve users' ability to find support through external search
-engines and internal navigation. I collaborated closely with product and UX
-teams, leveraging Google Analytics data and A/B testing to measure improvements.
-* **On-Call Duties & Incident Resolution:** My responsibilities included
-troubleshooting and resolving incidents, monitoring application logs,
-acknowledging alerts, and generating detailed reports for relevant teams to
-ensure quick issue resolution and minimize user impact.
+- **Developing New Features for the Help Center:** Implemented new FAQ pages and
+  features to improve users' ability to find support through external search
+  engines and internal navigation. I collaborated closely with product and UX
+  teams, leveraging Google Analytics data and A/B testing to measure improvements.
+- **On-Call Duties & Incident Resolution:** My responsibilities included
+  troubleshooting and resolving incidents, monitoring application logs,
+  acknowledging alerts, and generating detailed reports for relevant teams to
+  ensure quick issue resolution and minimize user impact.
 
 #### Tech Stack
 
@@ -141,10 +143,11 @@ ensure quick issue resolution and minimize user impact.
 
 ---
 
-## Experience *4/4* {.xp}
+## Experience _4/4_ {.xp}
 
 ### Senior Frontend Developer & Tech Lead at [Globant](https://www.globant.com/)
-*Buenos Aires, Argentina* - *May 2016 - December 2020*
+
+_Buenos Aires, Argentina_ - _May 2016 - December 2020_
 
 At Globant, I worked as a frontend developer and tech lead on a web application
 for managing financial instruments and real-time transactions for a major
@@ -153,17 +156,17 @@ the team using React and Angular to develop the solution.
 
 #### Main Responsibilities
 
-* **Client Communication:** Attended meetings with clients to understand their
-needs and translate them into actionable Jira tasks for the team, ensuring
-smooth communication between the client and the development team.
-* **Developing a Financial Trading Platform:** Contributed to implementing
-features for managing financial instruments and stock transactions, handling
-large volumes of data and real-time updates.
-* **API Integration:** Helped design and implement a middleware service to
-standardize the bank's API integrations, improving maintainability and
-scalability.
-* **Mentoring Junior Developers:** Supported junior team members by sharing
-knowledge and fostering a collaborative work environment.
+- **Client Communication:** Attended meetings with clients to understand their
+  needs and translate them into actionable Jira tasks for the team, ensuring
+  smooth communication between the client and the development team.
+- **Developing a Financial Trading Platform:** Contributed to implementing
+  features for managing financial instruments and stock transactions, handling
+  large volumes of data and real-time updates.
+- **API Integration:** Helped design and implement a middleware service to
+  standardize the bank's API integrations, improving maintainability and
+  scalability.
+- **Mentoring Junior Developers:** Supported junior team members by sharing
+  knowledge and fostering a collaborative work environment.
 
 #### Tech Stack
 
@@ -178,15 +181,15 @@ knowledge and fostering a collaborative work environment.
 
 **Instituto de Diseño de Valencia**
 Graphic Design (2009 – 2012)<br>
-*Venezuela*
+_Venezuela_
 
 **Universidad José Antonio Páez**
 Bachelor’s Degree in Computer Engineering (2003 – 2008)<br>
-*Venezuela*
+_Venezuela_
 
 **Universidad José Antonio Páez**
 Diploma in Web Application Development (2005 – 2006)<br>
-*Venezuela*
+_Venezuela_
 
 ## Interests
 
@@ -201,9 +204,9 @@ eat and exploring the city.
 
 ## About Me
 
-* **Full name:** Luis José Saturno Rueda  
-* **Nationality:** Venezuelan
-* **Date of birth:** March 13th, 1986
+- **Full name:** Luis José Saturno Rueda
+- **Nationality:** Venezuelan
+- **Date of birth:** March 13th, 1986
 
 ---{.decorative-footer}
 

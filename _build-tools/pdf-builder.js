@@ -20,10 +20,9 @@ for (const lang of langs) {
 				top: '25mm',
 				bottom: '15mm',
 				left: '0mm',
-				right: '0mm'
+				right: '0mm',
 			},
 			printBackground: true,
 		});
 	});
 }
-

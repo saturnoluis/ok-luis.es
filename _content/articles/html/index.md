@@ -33,6 +33,6 @@ es que al final de cada lección no sólo hayas aprendido una nueva herramienta
 y sus fundamentos técnicos pero también obtengas un nuevo recurso para crear y
 expresar tu creatividad a través del código.
 
---- 
+---
 
 [Link to Google](https://www.google.com)
