@@ -1,19 +1,28 @@
 import { test, expect } from '@playwright/test';
 
-const langs = ['en', 'es'];
+const files = [
+	{
+		input: '/cv',
+		output: 'Luis-Saturno_cv_es.pdf',
+	},
+	{
+		input: '/cv/en',
+		output: 'Luis-Saturno_cv_en.pdf',
+	},
+];
 
-for (const lang of langs) {
-	const filename = `Luis-Saturno_cv_${lang}.pdf`;
-
-	test(`Generate pdf file: ${filename}`, async ({ page }) => {
-		await page.goto(`/cv/${lang}/`);
+for (const file of files) {
+	test(`Generate pdf file: ${file.output}`, async ({ page }) => {
+		await page.goto(file.input);
 
 		const title = await page.title();
+		expect(title).toBe(file.output);
 
-		expect(title).toBe(filename);
+		const name = page.getByText('Luis Saturno');
+		await expect(name).toBeVisible();
 
 		await page.pdf({
-			path: `_static/files/${filename}`,
+			path: `_static/files/${file.output}`,
 			width: '210mm',
 			height: '210mm',
 			margin: {
