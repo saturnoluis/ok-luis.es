@@ -13,7 +13,7 @@ export default defineConfig({
 		},
 	],
 	webServer: {
-		command: 'npm run build && npm run start',
+		command: 'npm run build && npm run serve',
 		url: 'http://127.0.0.1:8080',
 	},
 });

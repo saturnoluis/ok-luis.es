@@ -6,10 +6,11 @@
 	"license": "GPL-3.0-or-later",
 	"description": "",
 	"scripts": {
-		"start": "eleventy --serve",
+		"serve": "eleventy --serve",
 		"build": "eleventy",
 		"build:pdf": "eleventy && playwright test",
-		"format": "npx prettier . --write"
+		"format": "npx prettier . --write",
+		"remove:docs": "rm -rf /docs"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.0.0",
