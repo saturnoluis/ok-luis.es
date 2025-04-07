@@ -24,9 +24,9 @@ for (const file of files) {
 		await page.pdf({
 			path: `_static/files/${file.output}`,
 			width: '210mm',
-			height: '210mm',
+			height: '297mm',
 			margin: {
-				top: '25mm',
+				top: '35mm',
 				bottom: '15mm',
 				left: '0mm',
 				right: '0mm',

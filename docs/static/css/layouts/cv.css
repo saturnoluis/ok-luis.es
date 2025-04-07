@@ -64,6 +64,7 @@ header a:active {
 	height: 1pt;
 	box-shadow: 0pt 1pt var(--gray);
 	background: var(--light-gray);
+	margin: 1em auto;
 }
 
 .document p {
@@ -102,10 +103,10 @@ header a:active {
 }
 
 .document h1 {
-	font-family: 'Deluxe', sans-serif;
-	font-size: 22pt;
+	font-size: 26pt;
+	font-weight: bold;
 	width: 50mm;
-	line-height: 1.2em;
+	line-height: 1em;
 	color: var(--blue);
 	float: left;
 	padding: 8mm 4mm;
@@ -197,7 +198,7 @@ header a:active {
 
 .document .window + ul {
 	padding: 1em;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 	background: var(--light-gray);
 	box-shadow: 2pt 2pt var(--blue);
 }

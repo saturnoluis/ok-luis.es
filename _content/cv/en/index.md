@@ -24,23 +24,28 @@ Frontend and full-stack developer with over 10 years of experience in the
 software industry. I specialize in web standards and modern frameworks like
 SvelteKit and Next.js.
 
-I have experience working both independently and in large teams, which has made
-me a versatile professional, adaptable to change. I care about writing clean,
-well-structured, and properly documented code to facilitate teamwork and
-long-term maintainability. I also have an analytical mindset that helps me
-identify and solve issues efficiently.
+## About me
 
-I’m responsible, open-minded, honest, collaborative, and passionate about
-coding.
+- Versatile professional with experience working independently and in large
+  teams, adaptable to change and diverse environments.
+- Focused on writing clean, well-structured, and well-documented code to support
+  collaboration and long-term maintainability.
+- Analytical mindset that helps identify and resolve issues efficiently.
+- Responsible, open-minded, honest, collaborative, and passionate about coding.
 
-## My Current Tech Stack{.window}
+## Core Skills (tech-stack) {.window}
 
-- **Languages:** JavaScript, TypeScript, HTML5, CSS3.
+- **Languages & APIs:** JavaScript, TypeScript, HTML5, CSS3, REST API.
 - **Frameworks & Tools:** SvelteKit, Next.js, Tailwind, Node.js, Vitest, Playwright.
 - **Environment & Utilities:** Git, Bash, Neovim, tmux, Fedora Linux.
 - **Development Practices:** Agile, Unit Testing, GitHub CI/CD.
 
-## Experience _1/4_ {.xp}
+I have experience with automated testing (unit and end-to-end), continuous
+integration using GitHub Actions, and Agile methodologies (Scrum or Kanban).
+
+---
+
+## Professional Experience _1/4_ {.xp}
 
 ### Senior Frontend Developer & Tech Lead at [DC Connected Car GmbH](https://www.dc-connected.de/en)
 
@@ -76,7 +81,7 @@ breakdowns, reducing waiting times and support costs for drivers.
 
 ---
 
-## Experience _2/4_ {.xp}
+## Professional Experience _2/4_ {.xp}
 
 ### Senior Frontend Developer at [Wordly. Inc.](https://www.wordly.ai/)
 
@@ -111,7 +116,7 @@ virtual presentations, webinars, conferences, and videos.
 
 ---
 
-## Experience _3/4_ {.xp}
+## Professional Experience _3/4_ {.xp}
 
 ### Senior Frontend Developer at [MercadoLibre](https://mercadolibre.com.ar)
 
@@ -143,7 +148,7 @@ post-mortem reporting.
 
 ---
 
-## Experience _4/4_ {.xp}
+## Professional Experience _4/4_ {.xp}
 
 ### Senior Frontend Developer & Tech Lead at [Globant](https://www.globant.com/)
 
@@ -191,7 +196,7 @@ _Venezuela_
 Diploma in Web Application Development (2005 – 2006)<br>
 _Venezuela_
 
-## Interests
+## Interests and Personal Info
 
 I’m a big Linux enthusiast and passionate about everything related to Free and
 Open-Source Software. I love watching movies, especially sci-fi—The Matrix is my
@@ -202,7 +207,7 @@ almost nine years, where I learned to drink mate, make pottery, and where our
 dog, Napoleón, was born. Now we live in Barcelona, where we enjoy going out to
 eat and exploring the city.
 
-## About Me
+---
 
 - **Full name:** Luis José Saturno Rueda
 - **Nationality:** Venezuelan

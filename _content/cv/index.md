@@ -20,28 +20,34 @@ Barcelona, España •
 
 ## Resumen
 
-Desarrollador frontend y full-stack con más de 10 años de experiencia en la
-industria de software. Me especializo en el uso de estándares web y de
+Desarrollador frontend y full-stack Senior con más de 10 años de experiencia en
+la industria de software. Me especializo en el uso de estándares web y de
 frameworks modernos como SvelteKit y Next.js.
 
-Tengo experiencia trabajando tanto de manera independiente como en equipos
-grandes, esto me ha enseñado a ser un profesional versátil y adaptable al
-cambio. Me preocupo por escribir código limpio, ordenado y bien documentado, lo
-que facilita el trabajo en equipo y mejora la mantenibilidad a largo plazo.
-Además, tengo un enfoque analítico que me permite identificar y resolver errores
-de manera eficiente.
+## Sobre mí
 
-Me caracterizo por ser responsable, de mente abierta, honesto, colaborativo y
-apasionado por el código.
+- Versátil y adaptable al cambio, con experiencia trabajando de forma
+  independiente y en equipos grandes.
+- Me preocupo por escribir código limpio, ordenado y bien documentado,
+  facilitando el trabajo en equipo y la mantenibilidad a largo plazo.
+- Enfoque analítico que me permite identificar y resolver errores de manera
+  eficiente.
+- Me caracterizo por ser responsable, de mente abierta, honesto, colaborativo y
+  apasionado por el código.
 
-## Mi stack actual{.window}
+## Habilidades principales (tech-stack) {.window}
 
-- **Lenguajes**: JavaScript, TypeScript, HTML5, CSS3.
+- **Lenguajes y APIs**: JavaScript, TypeScript, HTML5, CSS3, REST API.
 - **Frameworks y herramientas**: SvelteKit, Next.js, Tailwind, Node.js, Vitest, Playwright.
 - **Entorno y utilidades**: Git, Bash, Neovim, tmux, Fedora Linux.
 - **Prácticas de desarrollo**: Agile, Unit Testing, GitHub CI/CD.
 
-## Experiencia _1/4_ {.xp}
+Tengo experiencia con testing automatizado (unit y end-to-end), integración
+continua con GitHub Actions y metodologías Agile (Scrum o Kanban).
+
+---
+
+## Experiencia profesional _1/4_ {.xp}
 
 ### Desarrollador Frontend Senior y líder técnico en [DC Connected Car GmbH](https://www.dc-connected.de/en)
 
@@ -82,7 +88,7 @@ tiempos de espera y costos de soporte para los conductores.
 
 ---
 
-## Experiencia _2/4_ {.xp}
+## Experiencia profesional _2/4_ {.xp}
 
 ### Desarrollador Frontend Senior en [Wordly. Inc.](https://www.wordly.ai/)
 
@@ -121,7 +127,7 @@ presentaciones virtuales, webinarios, conferencias y videos.
 
 ---
 
-## Experiencia _3/4_ {.xp}
+## Experiencia profesional _3/4_ {.xp}
 
 ### Desarrollador Frontend Senior en [MercadoLibre](https://mercadolibre.com.ar)
 
@@ -158,7 +164,7 @@ post-mortem.
 
 ---
 
-## Experiencia _4/4_ {.xp}
+## Experiencia profesional _4/4_ {.xp}
 
 ### Globant - Desarrollador Frontend y Líder Técnico en [Globant](https://www.globant.com/)
 
@@ -209,7 +215,7 @@ _Venezuela_
 Diplomado en Desarrollo de Aplicaciones Web (2005 – 2006)<br>
 _Venezuela_
 
-## Intereses
+## Intereses e Información Personal
 
 Soy un gran entusiasta de Linux y todo lo que tenga que ver con Software Libre.
 Me encanta ver películas, especialmente de ciencia ficción; mi favorita es
@@ -220,7 +226,7 @@ años en Argentina, donde aprendí a tomar mate, hacer cerámica y donde nació
 nuestro perro llamado Napoleón. Ahora vivimos en Barcelona donde disfrutamos
 salir a comer y conocer la ciudad.
 
-## Sobre Mí
+---
 
 - **Nombre completo:** Luis José Saturno Rueda
 - **Nacionalidad:** Venezolano
