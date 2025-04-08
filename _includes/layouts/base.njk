@@ -10,11 +10,15 @@
 		<title>{{ title }}</title>
 	</head>
 	<body class="dark">
-		<ok-window title="Hello world">
-			<p>
-			{{ content | safe }}
-			</p>
-		</ok-window>
+		<main class="desktop">
+			<aside class="taskbar">
+			</aside>
+			<section>
+				<ok-window title="{{ title }}">
+					{{ content | safe }}
+				</ok-window>
+			</section>
+		</main>
 
 		<script
 			type="module"

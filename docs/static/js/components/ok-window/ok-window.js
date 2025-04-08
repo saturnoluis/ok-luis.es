@@ -1,4 +1,4 @@
-import { LitElement, html, css } from '/static/js/lib/lit-core.min.js';
+import { LitElement, html, css, classMap } from '/static/js/lib/lit-all.min.js';
 
 class OkWindow extends LitElement {
 	static properties = {
@@ -11,7 +11,7 @@ class OkWindow extends LitElement {
 
 	constructor() {
 		super();
-		this.maximized = false;
+		this.maximized = true;
 	}
 
 	static styles = getStyles();
@@ -19,33 +19,33 @@ class OkWindow extends LitElement {
 	render() {
 		return html`
 
-<main class=${this.maximized ? 'window maximized' : 'window'}>
-	<div class="window__inner">
-		<header class="title">
-			<div class="title__inner">
-				<div class="window_button__group">
-					<a class="window_button" href="/">
+<article class=${classMap({ window: true, maximized: this.maximized })}>
+	<div class="inner">
+		<aside class="title" aria-hidden="true">
+			<div class="inner">
+				<div class="button_group">
+					<a class="button" href="/">
 						<img alt="Close" src="/static/icons/x.svg">
 					</a>
-					<button class="window_button" id="window_button--hide">
+					<button class="button">
 						<img alt="Hide" src="/static/icons/-.svg">
 					</button>
 				</div>
 				<span>${this.title}</span>
-				<div class="window_button__group">
-					<button class="window_button" id="window_button--theme-switcher">
+				<div class="button_group">
+					<button class="button">
 						<img alt="Night mode On" src="/static/icons/moon.svg">
 					</button>
 				</div>
 			</div>
-		</header>
-		<section class="window_content">
-			<div class="window_content__inner">
+		</aside>
+		<section class="content">
+			<div class="inner">
 				<slot></slot>
 			</div>
 		</section>
 	<div>
-</main>
+</article>
 `;
 	}
 }
@@ -60,11 +60,25 @@ function getStyles() {
 			box-shadow: 2rem 2rem #1a1a1a;
 			color: white;
 			display: block;
-			margin: 130px auto;
-			width: 300rem;
+			height: 90%;
+			width: 80vw;
+			max-width: 640rem;
+			position: absolute;
+			top: 4%;
+			right: 6%;
+			box-sizing: border-box;
 		}
 
-		.window__inner {
+		.window.maximized {
+			position: relative;
+			top: auto;
+			right: auto;
+			height: 100%;
+			width: 100%;
+			max-width: 100vw;
+		}
+
+		.window > .inner {
 			box-shadow: inset 1rem 1rem #4d4d4d;
 			min-height: 80rem;
 			height: 100%;
@@ -76,7 +90,7 @@ function getStyles() {
 			font-family: 'Deluxe', sans-serif;
 		}
 
-		.title__inner {
+		.title > .inner {
 			align-items: center;
 			background-color: #1a1a1a;
 			display: flex;
@@ -86,20 +100,20 @@ function getStyles() {
 			padding: 2rem;
 		}
 
-		.title__inner span {
+		.title > .inner span {
 			font-size: 8rem;
 		}
 
-		.window_content {
+		.content {
 			padding: 2rem;
 		}
 
-		.window_content__inner {
+		.content > .inner {
 			padding: 2rem;
 			font-size: 9rem;
 		}
 
-		.window_button {
+		.button {
 			align-items: center;
 			background-color: #333;
 			border: none;
@@ -116,22 +130,22 @@ function getStyles() {
 			width: 16rem;
 		}
 
-		.window_button img {
+		.button img {
 			display: block;
 			height: 16rem;
 			opacity: 0.3;
 		}
 
-		.window_button:hover img {
+		.button:hover img {
 			opacity: 1;
 		}
 
-		.window_button:active {
+		.button:active {
 			background-color: #222;
 			box-shadow: inset -1rem -1rem #4d4d4d;
 		}
 
-		.window_button__group {
+		.button_group {
 			display: flex;
 			flex-direction: row;
 			gap: 2rem;
