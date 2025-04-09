@@ -10,7 +10,7 @@ layout: layouts/cv.njk
 
 ---{.clear}
 
-**Software Developer and Engineer**  
+**Senior Frontend Developer & Software Engineer**  
 {.title}
 
 Barcelona, Spain •

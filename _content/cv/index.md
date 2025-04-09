@@ -10,7 +10,7 @@ layout: layouts/cv.njk
 
 ---{.clear}
 
-**Desarrollador de Software Full-Stack**
+**Desarrollador Frontend Senior e Ingeniero en Software**
 {.title}
 
 Barcelona, España •
