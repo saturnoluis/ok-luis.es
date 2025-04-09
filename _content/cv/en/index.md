@@ -111,7 +111,7 @@ virtual presentations, webinars, conferences, and videos.
 - React, Angular
 - Material UI
 - Axios
-- Jest (unit testing)
+- Jest, React Testing Library (unit testing)
 - Git, Jira, Notion
 
 ---
@@ -143,6 +143,7 @@ post-mortem reporting.
 #### Tech Stack
 
 - React, Next.js
+- Jest, React Testing Library
 - Node.js
 - HTML5, CSS3, SASS
 
@@ -175,8 +176,8 @@ the team using React and Angular to develop the solution.
 
 #### Tech Stack
 
-- React, Angular, SASS
-- Jest
+- React, Redux, React Router, Angular, SASS
+- Jest, Enzyme
 - OpenFin, Node.js
 - Git, Bitbucket, Jira, Confluence
 

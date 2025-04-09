@@ -159,6 +159,7 @@ post-mortem.
 #### Stack utilizado
 
 - React, Next.js
+- Jest, React Testing Library
 - Node.js
 - HTML5, CSS3, SASS
 
@@ -194,8 +195,8 @@ la solución.
 
 #### Stack utilizado
 
-- React, Angular, SASS
-- Jest
+- React, React Redux, React Router, Angular, SASS.
+- Jest, Enzyme
 - OpenFin, Node.js
 - Git, Bitbucket, Jira, Confluence
 
