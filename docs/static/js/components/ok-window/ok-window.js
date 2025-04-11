@@ -39,8 +39,8 @@ class OkWindow extends LitElement {
 	render() {
 		return html`
 
-	<div class="inner">
-		<aside class="title" @click="${this._handleClick}">
+	<div class="inner" title="">
+		<aside class="title" title="${this.title}" @click="${this._handleClick}">
 			<div class="inner">
 				<div class="button_group">
 					<a class="button" href="/">
@@ -58,7 +58,7 @@ class OkWindow extends LitElement {
 				</div>
 			</div>
 		</aside>
-		<section class="content" title="">
+		<section class="content">
 			<div class="inner">
 				<slot></slot>
 			</div>
