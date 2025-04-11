@@ -34,20 +34,24 @@ body.light {
 * *******/
 
 .desktop {
+	position: relative;
 	height: 100vh;
 	height: 100dvh;
 	overflow: hidden;
+	padding: 24rem 4rem 4rem 2rem;
+	box-sizing: border-box;
+	background: red;
 }
 
 .desktop .taskbar {
+	position: fixed;
+	top: 0;
+	left: 0;
 	height: 20rem;
-	background: blue;
-}
-
-.desktop section {
-	position: relative;
-	height: calc(100vh - 20rem);
-	height: calc(100dvh - 20rem);
-	padding: 2rem 4rem 4rem 2rem;
+	width: 100%;
 	box-sizing: border-box;
+	background: var(--surface);
+	box-shadow:
+		1rem 1rem var(--surface-shadow),
+		inset 1rem 1rem var(--surface-glow);
 }

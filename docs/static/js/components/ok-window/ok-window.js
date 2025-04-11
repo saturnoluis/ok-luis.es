@@ -83,11 +83,11 @@ function getStyles() {
 			box-shadow: 2rem 2rem var(--surface-shadow);
 			color: var(--text);
 			display: block;
-			height: 90%;
+			height: calc(90% - 24px);
 			width: 80vw;
 			max-width: 640rem;
 			position: absolute;
-			top: 4%;
+			top: calc(24rem + 2%);
 			right: 13%;
 			box-sizing: border-box;
 		}

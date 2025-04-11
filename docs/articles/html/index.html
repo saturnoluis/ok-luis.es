@@ -8,22 +8,14 @@
 		<link rel="stylesheet" href="/static/css/main.css"/>
 		<link rel="stylesheet" href="/static/css/layouts/base.css"/>
 		<title>ok-Luis.es - HTML</title>
-
-		<script>
-			window.litDisableBundleWarning = true;
-			setTimeout(() => {
-			//	const okWindow = document.getElementById('window');
-			//	okWindow.className = "maximized"
-			}, 5000);
-		</script>
 	</head>
 	<body class="dark">
 		<main class="desktop">
 			<aside class="taskbar">
+				<button id="taskbar-button">ok-Luis.es - HTML</button>
 			</aside>
-			<section>
-				<ok-window id="window" title="ok-Luis.es - HTML" class="maximize">
-					<h1>Qué es HTML?</h1>
+			<ok-window id="window" title="ok-Luis.es - HTML">
+				<h1>Qué es HTML?</h1>
 <p>HTML es un lenguaje de programación. Un lenguaje de programación es lo que
 usamos para darle instrucciones a una computadora. En este caso, HTML es el
 código (o parte del código) que tendríamos que escribir para desarrollar una
@@ -52,13 +44,31 @@ expresar tu creatividad a través del código.</p>
 <hr>
 <p><a href="https://www.google.com">Link to Google</a></p>
 
-				</ok-window>
-			</section>
+			</ok-window>
 		</main>
 
 		<script
 			type="module"
 			src="/static/js/components/ok-window/ok-window.js">
+		</script>
+
+		<script>
+		window.litDisableBundleWarning = true;
+
+		const okWindow = document.getElementById('window');
+		const taskbarButton = document.getElementById('taskbar-button');
+
+		taskbarButton.addEventListener('click', () => {
+
+			const className = okWindow.className.split(' ');
+			if (className.includes('minimize')) {
+				okWindow.className = className.filter((n) => n !== 'minimize').join(' ');
+			} else {
+				className.push('minimize');
+				okWindow.className = className.join(' ');
+			}
+
+			});
 		</script>
 	</body>
 </html>
