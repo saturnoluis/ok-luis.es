@@ -36,14 +36,14 @@ body.light {
 }
 
 .desktop .taskbar {
-	height: 24rem;
+	height: 20rem;
 	background: blue;
 }
 
 .desktop section {
 	position: relative;
-	height: calc(100vh - 24rem);
-	height: calc(100dvh - 24rem);
+	height: calc(100vh - 20rem);
+	height: calc(100dvh - 20rem);
 	background: aqua;
 	padding: 2rem 4rem 4rem 2rem;
 	box-sizing: border-box;

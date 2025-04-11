@@ -40,7 +40,7 @@ class OkWindow extends LitElement {
 		return html`
 
 	<div class="inner" title="">
-		<aside class="title" title="${this.title}" @click="${this._handleClick}">
+		<aside class="title" title="" @click="${this._handleClick}">
 			<div class="inner">
 				<div class="button_group">
 					<a class="button" href="/">
@@ -49,11 +49,11 @@ class OkWindow extends LitElement {
 				</div>
 				<span>${this.title}</span>
 				<div class="button_group">
-					<button class="button" id="minimize" aria-hidden>
-						<img inert alt="Night mode On" src="/static/icons/minimize.svg">
+					<button class="button" id="minimize" title="Minimize" aria-hidden>
+						<img inert src="/static/icons/minimize.svg">
 					</button>
-					<button class="button" id="maximize" aria-hidden>
-						<img inert alt="Hide" src="/static/icons/maximize.svg">
+					<button class="button" id="maximize" title="Maximize" aria-hidden>
+						<img inert src="/static/icons/maximize.svg">
 					</button>
 				</div>
 			</div>
@@ -109,7 +109,7 @@ function getStyles() {
 		.title {
 			padding: 2rem;
 			padding-right: 1rem;
-			font-family: 'Deluxe', sans-serif;
+			font-family: 'Sysfont', sans-serif;
 		}
 
 		.title > .inner {
@@ -123,7 +123,7 @@ function getStyles() {
 		}
 
 		.title > .inner span {
-			font-size: 8rem;
+			font-size: 12rem;
 		}
 
 		.content {

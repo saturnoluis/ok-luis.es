@@ -10,6 +10,7 @@
 		<title>{{ title }}</title>
 
 		<script>
+			window.litDisableBundleWarning = true;
 			setTimeout(() => {
 			//	const okWindow = document.getElementById('window');
 			//	okWindow.className = "maximized"
@@ -21,7 +22,7 @@
 			<aside class="taskbar">
 			</aside>
 			<section>
-				<ok-window id="window" title="{{ title }}">
+				<ok-window id="window" title="{{ title }}" class="maximize">
 					{{ content | safe }}
 				</ok-window>
 			</section>
