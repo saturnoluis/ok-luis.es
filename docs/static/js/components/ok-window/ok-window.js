@@ -1,51 +1,69 @@
-import { LitElement, html, css, classMap } from '/static/js/lib/lit-all.min.js';
+import { LitElement, html, css } from '/static/js/lib/lit-all.min.js';
 
 class OkWindow extends LitElement {
 	static properties = {
 		title: { type: String },
-		maximized: {
-			type: Boolean,
-			reflect: true,
-		},
+		clicked: {},
 	};
+
+	static styles = getStyles();
 
 	constructor() {
 		super();
-		this.maximized = true;
+		this.clicked = '';
 	}
 
-	static styles = getStyles();
+	_handleClick(event) {
+		const actions = ['maximize', 'minimize'];
+		const id = event.target.id;
+
+		if (!actions.includes(id)) {
+			return;
+		}
+
+		console.log('before', this.className);
+
+		const className = this.className.split(' ');
+
+		if (className.includes(id)) {
+			this.className = className.filter(n => n !== id).join(' ');
+		}
+		else {
+			className.push(id);
+			this.className = className.join(' ');
+		}
+
+		console.log('after', this.className);
+	}
 
 	render() {
 		return html`
 
-<article class=${classMap({ window: true, maximized: this.maximized })}>
 	<div class="inner">
-		<aside class="title" aria-hidden="true">
+		<aside class="title" @click="${this._handleClick}">
 			<div class="inner">
 				<div class="button_group">
 					<a class="button" href="/">
 						<img alt="Close" src="/static/icons/x.svg">
 					</a>
-					<button class="button">
-						<img alt="Hide" src="/static/icons/-.svg">
-					</button>
 				</div>
 				<span>${this.title}</span>
 				<div class="button_group">
-					<button class="button">
-						<img alt="Night mode On" src="/static/icons/moon.svg">
+					<button class="button" id="minimize" aria-hidden>
+						<img inert alt="Night mode On" src="/static/icons/minimize.svg">
+					</button>
+					<button class="button" id="maximize" aria-hidden>
+						<img inert alt="Hide" src="/static/icons/maximize.svg">
 					</button>
 				</div>
 			</div>
 		</aside>
-		<section class="content">
+		<section class="content" title="">
 			<div class="inner">
 				<slot></slot>
 			</div>
 		</section>
 	<div>
-</article>
 `;
 	}
 }
@@ -54,7 +72,7 @@ customElements.define('ok-window', OkWindow);
 
 function getStyles() {
 	return css`
-		.window {
+		:host {
 			background-color: var(--background);
 			border: 1rem solid #1a1a1a;
 			box-shadow: 2rem 2rem #1a1a1a;
@@ -65,11 +83,11 @@ function getStyles() {
 			max-width: 640rem;
 			position: absolute;
 			top: 4%;
-			right: 6%;
+			right: 13%;
 			box-sizing: border-box;
 		}
 
-		.window.maximized {
+		:host(.maximize) {
 			position: relative;
 			top: auto;
 			right: auto;
@@ -78,7 +96,11 @@ function getStyles() {
 			max-width: 100vw;
 		}
 
-		.window > .inner {
+		:host(.minimize) {
+			display: none;
+		}
+
+		:host > .inner {
 			box-shadow: inset 1rem 1rem #4d4d4d;
 			min-height: 80rem;
 			height: 100%;
@@ -113,6 +135,12 @@ function getStyles() {
 			font-size: 9rem;
 		}
 
+		.button_group {
+			display: flex;
+			flex-direction: row;
+			gap: 2rem;
+		}
+
 		.button {
 			align-items: center;
 			background-color: #333;
@@ -145,10 +173,9 @@ function getStyles() {
 			box-shadow: inset -1rem -1rem #4d4d4d;
 		}
 
-		.button_group {
-			display: flex;
-			flex-direction: row;
-			gap: 2rem;
-		}
+		:host(.maximize) .button#maximize img {
+			opacity: 1;
+        }
+
 	`;
 }
