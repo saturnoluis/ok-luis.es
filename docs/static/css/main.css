@@ -11,13 +11,6 @@
 }
 
 @font-face {
-	font-family: 'Deluxe';
-	src: url('/static/fonts/deluxe.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
 	font-family: 'OpenSans';
 	src: url('/static/fonts/OpenSans-Regular.ttf') format('truetype');
 	font-weight: normal;

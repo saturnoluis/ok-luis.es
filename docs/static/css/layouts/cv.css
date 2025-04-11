@@ -9,7 +9,7 @@ body {
 	--gray: #c3c3c3;
 	--dark-gray: #808388;
 	--light-gray: #e0e3e8;
-	--aqua: #55aaaa;
+	--aqua: #017c7d;
 }
 
 header {
@@ -20,9 +20,9 @@ header {
 }
 
 header a {
-	padding: 6pt;
-	padding-left: 25pt;
-	font-family: 'Deluxe', sans-serif;
+	padding: 4pt 8pt 4pt 22pt;
+	font-size: 12pt;
+	font-family: 'Sysfont', sans-serif;
 	text-decoration: none;
 	line-height: 1em;
 	border: 1pt solid var(--blue);
@@ -76,10 +76,6 @@ header a:active {
 	font-weight: bold;
 }
 
-.document em {
-	font-size: 8pt;
-}
-
 .document ul {
 	padding-left: 2pt;
 }
@@ -103,8 +99,7 @@ header a:active {
 }
 
 .document h1 {
-	font-size: 26pt;
-	font-weight: bold;
+	font-size: 32pt;
 	width: 50mm;
 	line-height: 1em;
 	color: var(--blue);
@@ -113,8 +108,8 @@ header a:active {
 }
 
 .document h2 {
-	font-family: 'Deluxe', sans-serif;
-	font-size: 9pt;
+	font-family: 'Sysfont', sans-serif;
+	font-size: 11pt;
 	margin-bottom: 1em;
 	padding: 0.5em;
 	padding-top: 0.8em;
@@ -132,7 +127,7 @@ header a:active {
 }
 
 .document h3 + p {
-	font-size: 9pt;
+	font-size: 11pt;
 	line-height: 1.8em;
 	border-left: 3pt solid var(--aqua);
 	padding-left: 5pt;

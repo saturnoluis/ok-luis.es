@@ -7,7 +7,9 @@ test.describe('Generate pdf documents', () => {
 		const name = page.getByText('Luis Saturno');
 		await expect(name).toBeVisible();
 
-		const title = page.getByText('Desarrollador Frontend Senior e Ingeniero en Software');
+		const title = page.getByText(
+			'Desarrollador Frontend Senior e Ingeniero en Software',
+		);
 		await expect(title).toBeVisible();
 
 		await page.pdf({
@@ -30,7 +32,9 @@ test.describe('Generate pdf documents', () => {
 		const name = page.getByText('Luis Saturno');
 		await expect(name).toBeVisible();
 
-		const title = page.getByText('Senior Frontend Developer & Software Engineer');
+		const title = page.getByText(
+			'Senior Frontend Developer & Software Engineer',
+		);
 		await expect(title).toBeVisible();
 
 		await page.pdf({
@@ -46,6 +50,4 @@ test.describe('Generate pdf documents', () => {
 			printBackground: true,
 		});
 	});
-
 });
-

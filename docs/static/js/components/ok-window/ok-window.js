@@ -26,9 +26,8 @@ class OkWindow extends LitElement {
 		const className = this.className.split(' ');
 
 		if (className.includes(id)) {
-			this.className = className.filter(n => n !== id).join(' ');
-		}
-		else {
+			this.className = className.filter((n) => n !== id).join(' ');
+		} else {
 			className.push(id);
 			this.className = className.join(' ');
 		}
@@ -38,33 +37,43 @@ class OkWindow extends LitElement {
 
 	render() {
 		return html`
-
-	<div class="inner" title="">
-		<aside class="title" title="" @click="${this._handleClick}">
-			<div class="inner">
-				<div class="button_group">
-					<a class="button" href="/">
-						<img alt="Close" src="/static/icons/x.svg">
-					</a>
-				</div>
-				<span>${this.title}</span>
-				<div class="button_group">
-					<button class="button" id="minimize" title="Minimize" aria-hidden>
-						<img inert src="/static/icons/minimize.svg">
-					</button>
-					<button class="button" id="maximize" title="Maximize" aria-hidden>
-						<img inert src="/static/icons/maximize.svg">
-					</button>
-				</div>
+			<div class="inner" title="">
+				<aside class="title" title="" @click="${this._handleClick}">
+					<div class="inner">
+						<div class="button_group">
+							<a class="button" href="/">
+								<img alt="Close" src="/static/icons/x.svg" />
+							</a>
+						</div>
+						<span>${this.title}</span>
+						<div class="button_group">
+							<button
+								class="button"
+								id="minimize"
+								title="Minimize"
+								aria-hidden
+							>
+								<img inert src="/static/icons/minimize.svg" />
+							</button>
+							<button
+								class="button"
+								id="maximize"
+								title="Maximize"
+								aria-hidden
+							>
+								<img inert src="/static/icons/maximize.svg" />
+							</button>
+						</div>
+					</div>
+				</aside>
+				<section class="content">
+					<div class="inner">
+						<slot></slot>
+					</div>
+				</section>
+				<div></div>
 			</div>
-		</aside>
-		<section class="content">
-			<div class="inner">
-				<slot></slot>
-			</div>
-		</section>
-	<div>
-`;
+		`;
 	}
 }
 
@@ -150,7 +159,6 @@ function getStyles() {
 			color: #fff;
 			cursor: pointer;
 			display: flex;
-			font-family: 'Deluxe', sans-serif;
 			height: 16rem;
 			justify-content: center;
 			outline: none;
@@ -175,7 +183,6 @@ function getStyles() {
 
 		:host(.maximize) .button#maximize img {
 			opacity: 1;
-        }
-
+		}
 	`;
 }
