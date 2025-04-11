@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	background: #505050;
+	background: #333;
 	font-family: 'OpenSans', sans-serif;
 }
 
@@ -16,8 +16,13 @@ body {
 * *****************/
 
 body.dark {
-	--background: #333;
-	--color: white;
+	--text: #fff;
+
+	--surface: #3d3d3d;
+	--surface-glow: #6d6d6d;
+	--surface-shadow: #191919;
+
+	--title: #191919;
 }
 
 body.light {
@@ -29,7 +34,6 @@ body.light {
 * *******/
 
 .desktop {
-	background: red;
 	height: 100vh;
 	height: 100dvh;
 	overflow: hidden;
@@ -44,7 +48,6 @@ body.light {
 	position: relative;
 	height: calc(100vh - 20rem);
 	height: calc(100dvh - 20rem);
-	background: aqua;
 	padding: 2rem 4rem 4rem 2rem;
 	box-sizing: border-box;
 }

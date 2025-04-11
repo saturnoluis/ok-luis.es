@@ -21,8 +21,6 @@ class OkWindow extends LitElement {
 			return;
 		}
 
-		console.log('before', this.className);
-
 		const className = this.className.split(' ');
 
 		if (className.includes(id)) {
@@ -31,8 +29,6 @@ class OkWindow extends LitElement {
 			className.push(id);
 			this.className = className.join(' ');
 		}
-
-		console.log('after', this.className);
 	}
 
 	render() {
@@ -82,10 +78,10 @@ customElements.define('ok-window', OkWindow);
 function getStyles() {
 	return css`
 		:host {
-			background-color: var(--background);
-			border: 1rem solid #1a1a1a;
-			box-shadow: 2rem 2rem #1a1a1a;
-			color: white;
+			background-color: var(--surface);
+			border: 1rem solid var(--surface-shadow);
+			box-shadow: 2rem 2rem var(--surface-shadow);
+			color: var(--text);
 			display: block;
 			height: 90%;
 			width: 80vw;
@@ -110,7 +106,7 @@ function getStyles() {
 		}
 
 		:host > .inner {
-			box-shadow: inset 1rem 1rem #4d4d4d;
+			box-shadow: inset 1rem 1rem var(--surface-glow);
 			min-height: 80rem;
 			height: 100%;
 		}
@@ -123,7 +119,7 @@ function getStyles() {
 
 		.title > .inner {
 			align-items: center;
-			background-color: #1a1a1a;
+			background-color: var(--title);
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
@@ -133,6 +129,7 @@ function getStyles() {
 
 		.title > .inner span {
 			font-size: 12rem;
+			color: var(--text);
 		}
 
 		.content {
@@ -152,11 +149,10 @@ function getStyles() {
 
 		.button {
 			align-items: center;
-			background-color: #333;
+			background-color: var(--surface);
 			border: none;
-			box-shadow: inset 1rem 1rem #4d4d4d;
+			box-shadow: inset 1rem 1rem var(--surface-glow);
 			box-sizing: border-box;
-			color: #fff;
 			cursor: pointer;
 			display: flex;
 			height: 16rem;
@@ -177,8 +173,8 @@ function getStyles() {
 		}
 
 		.button:active {
-			background-color: #222;
-			box-shadow: inset -1rem -1rem #4d4d4d;
+			background-color: var(--surface-shadow);
+			box-shadow: inset -1rem -1rem var(--surface-glow);
 		}
 
 		:host(.maximize) .button#maximize img {
