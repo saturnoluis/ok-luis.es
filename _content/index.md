@@ -1,6 +1,6 @@
 ---
-title: ok-Luis
+title: wip
 layout: layouts/base.njk
 ---
 
-Everything's ok.
+Lorem Ipsum

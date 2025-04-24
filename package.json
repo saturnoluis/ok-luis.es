@@ -9,7 +9,8 @@
 		"serve": "eleventy --serve",
 		"build": "eleventy",
 		"build:pdf": "eleventy && playwright test",
-		"format": "npx prettier . --write"
+		"format": "npx prettier . --write && npm run format:njk",
+		"format:njk": "npx prettier --write '**/*.njk' --parser html"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.0.0",

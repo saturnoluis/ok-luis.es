@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="robots" content="noindex, nofollow">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex, nofollow" />
 
-		<link rel="stylesheet" href="/static/css/main.css"/>
-		<link rel="stylesheet" href="/static/css/layouts/base.css"/>
+		<link rel="stylesheet" href="/static/css/main.css" />
+		<link rel="stylesheet" href="/static/css/layouts/base.css" />
 		<title>{{ title }}</title>
 	</head>
-	<body class="dark">
+	<body class="light">
 		<main class="desktop">
 			<aside class="desktop__taskbar">
-				<button id="taskbar-button">{{ title }}</button>
+				<div class="inner">
+					<button id="taskbar-button" class="taskbar__button">
+						{{ title }}
+					</button>
+				</div>
 			</aside>
 			<section class="desktop__surface">
 				<ok-window id="window" title="{{ title }}">
@@ -23,26 +27,32 @@
 
 		<script
 			type="module"
-			src="/static/js/components/ok-window/ok-window.js">
-		</script>
+			src="/static/js/components/ok-window/ok-window.js"
+		></script>
 
 		<script>
-		window.litDisableBundleWarning = true;
+			window.litDisableBundleWarning = true;
 
-		const okWindow = document.getElementById('window');
-		const taskbarButton = document.getElementById('taskbar-button');
+			const okWindow = document.getElementById('window');
+			const taskbarButton = document.getElementById('taskbar-button');
 
-		taskbarButton.addEventListener('click', () => {
-
-			const className = okWindow.className.split(' ');
-			if (className.includes('minimize')) {
-				okWindow.className = className.filter((n) => n !== 'minimize').join(' ');
-			} else {
-				className.push('minimize');
-				okWindow.className = className.join(' ');
-			}
-
+			taskbarButton.addEventListener('click', () => {
+				toggleClassName(okWindow, 'minimize');
+				toggleClassName(taskbarButton, 'taskbar__button--active');
 			});
+
+			function toggleClassName(element, className) {
+				const elementClassName = element?.className.split(' ') || [];
+
+				if (elementClassName.includes(className)) {
+					element.className = elementClassName
+						.filter((n) => n !== className)
+						.join(' ');
+				} else {
+					elementClassName.push(className);
+					element.className = elementClassName.join(' ');
+				}
+			}
 		</script>
 	</body>
 </html>

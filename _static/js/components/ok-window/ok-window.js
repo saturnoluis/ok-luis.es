@@ -3,14 +3,12 @@ import { LitElement, html, css } from '/static/js/lib/lit-all.min.js';
 class OkWindow extends LitElement {
 	static properties = {
 		title: { type: String },
-		clicked: {},
 	};
 
 	static styles = getStyles();
 
 	constructor() {
 		super();
-		this.clicked = '';
 	}
 
 	_handleClick(event) {
@@ -79,8 +77,8 @@ function getStyles() {
 	return css`
 		:host {
 			background-color: var(--surface);
-			border: 1rem solid var(--surface-shadow);
-			box-shadow: 2rem 2rem var(--surface-shadow);
+			border: 1rem solid var(--border);
+			box-shadow: 2rem 2rem var(--surface-shadow-darker);
 			color: var(--text);
 			display: block;
 			height: calc(90% - 24px);
@@ -129,7 +127,7 @@ function getStyles() {
 
 		.title > .inner span {
 			font-size: 12rem;
-			color: var(--text);
+			color: var(--title-text);
 		}
 
 		.content {
@@ -165,7 +163,8 @@ function getStyles() {
 		.button img {
 			display: block;
 			height: 16rem;
-			opacity: 0.3;
+			opacity: 0.5;
+			filter: var(--button-filter);
 		}
 
 		.button:hover img {

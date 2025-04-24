@@ -16,17 +16,35 @@ body {
 * *****************/
 
 body.dark {
-	--text: #fff;
+	--text: #ffffff;
 
 	--surface: #3d3d3d;
-	--surface-glow: #6d6d6d;
+	--surface-glow: #808080;
 	--surface-shadow: #191919;
+	--surface-shadow-darker: #000000;
+
+	--border: #000000;
 
 	--title: #191919;
+	--title-text: #ededed;
+
+	--button-filter: none;
 }
 
 body.light {
-	--color: black;
+	--text: #000000;
+
+	--surface: #c2c2c2;
+	--surface-glow: #f0f0f0;
+	--surface-shadow: #999999;
+	--surface-shadow-darker: #424242;
+
+	--border: #424242;
+
+	--title: #131313;
+	--title-text: #ededed;
+
+	--button-filter: invert();
 }
 
 /*
@@ -46,18 +64,48 @@ body.light {
 	background: red;
 }
 
+/*
+* Desktop > taskbar
+*/
+
 .desktop__taskbar {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: var(--taskbar-height);
 	width: 100%;
+	height: var(--taskbar-height);
 	box-sizing: border-box;
 	background: var(--surface);
 	box-shadow:
 		1rem 1rem var(--surface-shadow),
 		inset 1rem 1rem var(--surface-glow);
 }
+
+.desktop__taskbar .inner {
+	box-sizing: border-box;
+	padding: 4rem 4rem 3rem 4rem;
+	height: 100%;
+}
+
+.taskbar__button {
+	display: block;
+	height: 100%;
+	background: var(--surface);
+	font-size: 9rem;
+	padding: 0 8rem;
+	box-shadow: inset 1rem 1rem var(--surface-glow);
+	border: 1rem solid var(--border);
+	cursor: pointer;
+}
+
+.taskbar__button--active {
+	background-color: var(--surface-shadow);
+	box-shadow: inset -1rem -1rem var(--surface-glow);
+}
+
+/*
+* Desktop > surface
+*/
 
 .desktop__surface {
 	position: relative;
