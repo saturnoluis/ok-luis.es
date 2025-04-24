@@ -11,12 +11,14 @@
 	</head>
 	<body class="dark">
 		<main class="desktop">
-			<aside class="taskbar">
+			<aside class="desktop__taskbar">
 				<button id="taskbar-button">{{ title }}</button>
 			</aside>
-			<ok-window id="window" title="{{ title }}">
-				{{ content | safe }}
-			</ok-window>
+			<section class="desktop__surface">
+				<ok-window id="window" title="{{ title }}">
+					{{ content | safe }}
+				</ok-window>
+			</section>
 		</main>
 
 		<script

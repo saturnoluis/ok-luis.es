@@ -37,20 +37,20 @@ class OkWindow extends LitElement {
 				<aside class="title" title="" @click="${this._handleClick}">
 					<div class="inner">
 						<div class="button_group">
-							<a class="button" href="/">
+							<a class="button" title="Close and go home" href="/">
 								<img alt="Close" src="/static/icons/x.svg" />
 							</a>
-						</div>
-						<span>${this.title}</span>
-						<div class="button_group">
 							<button
 								class="button"
 								id="minimize"
-								title="Minimize"
+								title="Hide this window"
 								aria-hidden
 							>
 								<img inert src="/static/icons/minimize.svg" />
 							</button>
+						</div>
+						<span>${this.title}</span>
+						<div class="button_group">
 							<button
 								class="button"
 								id="maximize"
@@ -85,9 +85,9 @@ function getStyles() {
 			display: block;
 			height: calc(90% - 24px);
 			width: 80vw;
-			max-width: 640rem;
+			max-width: 64vw;
 			position: absolute;
-			top: calc(24rem + 2%);
+			top: 16rem;
 			right: 13%;
 			box-sizing: border-box;
 		}

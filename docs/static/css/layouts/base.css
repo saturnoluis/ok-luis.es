@@ -34,24 +34,32 @@ body.light {
 * *******/
 
 .desktop {
+	--taskbar-height: 21rem;
+
 	position: relative;
 	height: 100vh;
 	height: 100dvh;
 	overflow: hidden;
-	padding: 24rem 4rem 4rem 2rem;
+	padding: 0px;
+	padding-top: var(--taskbar-height);
 	box-sizing: border-box;
 	background: red;
 }
 
-.desktop .taskbar {
+.desktop__taskbar {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 20rem;
+	height: var(--taskbar-height);
 	width: 100%;
 	box-sizing: border-box;
 	background: var(--surface);
 	box-shadow:
 		1rem 1rem var(--surface-shadow),
 		inset 1rem 1rem var(--surface-glow);
+}
+
+.desktop__surface {
+	position: relative;
+	height: 99.7%;
 }
