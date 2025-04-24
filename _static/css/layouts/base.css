@@ -19,8 +19,8 @@ body.dark {
 	--text: #ffffff;
 
 	--surface: #3d3d3d;
-	--surface-glow: #808080;
-	--surface-shadow: #191919;
+	--surface-glow: #e7e7e7;
+	--surface-shadow: #737173;
 	--surface-shadow-darker: #000000;
 
 	--border: #000000;
@@ -34,14 +34,15 @@ body.dark {
 body.light {
 	--text: #000000;
 
-	--surface: #c2c2c2;
+	--surface: #bdbebd;
 	--surface-glow: #f0f0f0;
 	--surface-shadow: #999999;
 	--surface-shadow-darker: #424242;
 
-	--border: #424242;
+	--border: #050606;
 
-	--title: #131313;
+	--title: #1b1a67;
+	--title-darker: #080831;
 	--title-text: #ededed;
 
 	--button-filter: invert();
@@ -52,7 +53,7 @@ body.light {
 * *******/
 
 .desktop {
-	--taskbar-height: 21rem;
+	--taskbar-height: 22rem;
 
 	position: relative;
 	height: 100vh;
@@ -61,7 +62,7 @@ body.light {
 	padding: 0px;
 	padding-top: var(--taskbar-height);
 	box-sizing: border-box;
-	background: red;
+	background: #008a8c;
 }
 
 /*
@@ -77,30 +78,42 @@ body.light {
 	box-sizing: border-box;
 	background: var(--surface);
 	box-shadow:
-		1rem 1rem var(--surface-shadow),
+		inset -1rem -1rem var(--surface-shadow-darker),
 		inset 1rem 1rem var(--surface-glow);
 }
 
 .desktop__taskbar .inner {
+	display: flex;
+	align-content: center;
+	padding: 2rem;
 	box-sizing: border-box;
-	padding: 4rem 4rem 3rem 4rem;
 	height: 100%;
 }
 
 .taskbar__button {
 	display: block;
-	height: 100%;
+	color: var(--text);
 	background: var(--surface);
+	font-family: 'Sysfont', sans-serif;
 	font-size: 9rem;
 	padding: 0 8rem;
-	box-shadow: inset 1rem 1rem var(--surface-glow);
-	border: 1rem solid var(--border);
 	cursor: pointer;
+	box-sizing: border-box;
+	border: none;
+	box-shadow:
+		inset -1rem -1rem var(--surface-shadow-darker),
+		inset 1rem 1rem var(--surface-glow);
 }
 
-.taskbar__button--active {
+.taskbar__button:active {
 	background-color: var(--surface-shadow);
-	box-shadow: inset -1rem -1rem var(--surface-glow);
+	box-shadow:
+		inset 1rem 1rem var(--surface-shadow-darker),
+		inset -1rem -1rem var(--surface-glow);
+}
+
+.taskbar__button--hidden {
+	display: none;
 }
 
 /*

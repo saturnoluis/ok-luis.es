@@ -7,20 +7,31 @@
 
 		<link rel="stylesheet" href="/static/css/main.css" />
 		<link rel="stylesheet" href="/static/css/layouts/base.css" />
+
 		<title>wip</title>
 	</head>
 	<body class="light">
 		<main class="desktop">
 			<aside class="desktop__taskbar">
 				<div class="inner">
-					<button id="taskbar-button" class="taskbar__button">
+					<button id="taskbar-button" class="taskbar__button taskbar__button--hidden">
 						wip
 					</button>
 				</div>
 			</aside>
 			<section class="desktop__surface">
 				<ok-window id="window" title="wip">
-					<p>Lorem Ipsum</p>
+					<h1>GET handler</h1>
+<p>The first argument to Response can be a ReadableStream, making it possible to
+stream large amounts of data or create server-sent events (unless deploying to
+platforms that buffer responses, like AWS Lambda).</p>
+<p>You can use the error, redirect and json methods from @sveltejs/kit for
+convenience (but you don’t have to).</p>
+<p>If an error is thrown (either error(...) or an unexpected error), the response
+will be a JSON representation of the error or a fallback error page — which can
+be customised via src/error.html — depending on the Accept header. The
++error.svelte component will not be rendered in this case. You can read more
+about error handling here.</p>
 
 				</ok-window>
 			</section>
@@ -39,7 +50,7 @@
 
 			taskbarButton.addEventListener('click', () => {
 				toggleClassName(okWindow, 'minimize');
-				toggleClassName(taskbarButton, 'taskbar__button--active');
+				toggleClassName(taskbarButton, 'taskbar__button--hidden');
 			});
 
 			function toggleClassName(element, className) {

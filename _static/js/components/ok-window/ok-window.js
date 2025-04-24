@@ -1,5 +1,18 @@
 import { LitElement, html, css } from '/static/js/lib/lit-all.min.js';
 
+			function toggleClassName(element, className) {
+				const elementClassName = element?.className.split(' ') || [];
+
+				if (elementClassName.includes(className)) {
+					element.className = elementClassName
+						.filter((n) => n !== className)
+						.join(' ');
+				} else {
+					elementClassName.push(className);
+					element.className = elementClassName.join(' ');
+				}
+			}
+
 class OkWindow extends LitElement {
 	static properties = {
 		title: { type: String },
@@ -13,19 +26,17 @@ class OkWindow extends LitElement {
 
 	_handleClick(event) {
 		const actions = ['maximize', 'minimize'];
-		const id = event.target.id;
+		const actionId = event.target.id;
 
-		if (!actions.includes(id)) {
+		if (!actions.includes(actionId)) {
 			return;
 		}
 
-		const className = this.className.split(' ');
+		toggleClassName(this, actionId);
 
-		if (className.includes(id)) {
-			this.className = className.filter((n) => n !== id).join(' ');
-		} else {
-			className.push(id);
-			this.className = className.join(' ');
+		if (actionId === 'minimize') {
+			const taskbarButton = document.getElementById('taskbar-button');
+			toggleClassName(taskbarButton, 'taskbar__button--hidden');
 		}
 	}
 
@@ -117,12 +128,16 @@ function getStyles() {
 
 		.title > .inner {
 			align-items: center;
-			background-color: var(--title);
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			min-height: 16rem;
 			padding: 2rem;
+			background: var(--title);
+			background: linear-gradient(90deg,
+				var(--title) 0%,
+				var(--title-darker) 100%
+			);
 		}
 
 		.title > .inner span {
@@ -131,12 +146,13 @@ function getStyles() {
 		}
 
 		.content {
-			padding: 2rem;
+			padding: 0 2rem;
 		}
 
 		.content > .inner {
 			padding: 2rem;
 			font-size: 9rem;
+			line-height: 1.2em;
 		}
 
 		.button_group {
@@ -163,7 +179,7 @@ function getStyles() {
 		.button img {
 			display: block;
 			height: 16rem;
-			opacity: 0.5;
+			opacity: 0.7;
 			filter: var(--button-filter);
 		}
 

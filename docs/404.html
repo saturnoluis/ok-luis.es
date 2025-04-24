@@ -7,13 +7,14 @@
 
 		<link rel="stylesheet" href="/static/css/main.css" />
 		<link rel="stylesheet" href="/static/css/layouts/base.css" />
+
 		<title>ok-Luis.es - 404</title>
 	</head>
 	<body class="light">
 		<main class="desktop">
 			<aside class="desktop__taskbar">
 				<div class="inner">
-					<button id="taskbar-button" class="taskbar__button">
+					<button id="taskbar-button" class="taskbar__button taskbar__button--hidden">
 						ok-Luis.es - 404
 					</button>
 				</div>
@@ -39,7 +40,7 @@
 
 			taskbarButton.addEventListener('click', () => {
 				toggleClassName(okWindow, 'minimize');
-				toggleClassName(taskbarButton, 'taskbar__button--active');
+				toggleClassName(taskbarButton, 'taskbar__button--hidden');
 			});
 
 			function toggleClassName(element, className) {
