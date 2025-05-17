@@ -53,74 +53,21 @@ body.light {
 * *******/
 
 .desktop {
-	--taskbar-height: 22rem;
+	--taskbar-height: 20rem;
 
-	position: relative;
+	display: grid;
+	grid-template-rows: var(--taskbar-height) 1fr;
+
 	height: 100vh;
 	height: 100dvh;
-	overflow: hidden;
-	padding: 0px;
-	padding-top: var(--taskbar-height);
-	box-sizing: border-box;
 	background: #008a8c;
 }
 
-/*
-* Desktop > taskbar
-*/
-
-.desktop__taskbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: var(--taskbar-height);
-	box-sizing: border-box;
-	background: var(--surface);
-	box-shadow:
-		inset -1rem -1rem var(--surface-shadow-darker),
-		inset 1rem 1rem var(--surface-glow);
-}
-
-.desktop__taskbar .inner {
-	display: flex;
-	align-content: center;
-	padding: 2rem;
-	box-sizing: border-box;
-	height: 100%;
-}
-
-.taskbar__button {
-	display: block;
-	color: var(--text);
-	background: var(--surface);
-	font-family: 'Sysfont', sans-serif;
-	font-size: 9rem;
-	padding: 0 8rem;
-	cursor: pointer;
-	box-sizing: border-box;
-	border: none;
-	box-shadow:
-		inset -1rem -1rem var(--surface-shadow-darker),
-		inset 1rem 1rem var(--surface-glow);
-}
-
-.taskbar__button:active {
-	background-color: var(--surface-shadow);
-	box-shadow:
-		inset 1rem 1rem var(--surface-shadow-darker),
-		inset -1rem -1rem var(--surface-glow);
-}
-
-.taskbar__button--hidden {
-	display: none;
-}
-
-/*
-* Desktop > surface
-*/
-
-.desktop__surface {
+.desktop .taskbar-area {
+	padding: 0;
 	position: relative;
-	height: 99.7%;
+}
+
+.desktop .window-area {
+	position: relative;
 }

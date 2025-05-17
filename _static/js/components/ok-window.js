@@ -1,17 +1,5 @@
-import { LitElement, html, css } from '/static/js/lib/lit-all.min.js';
-
-			function toggleClassName(element, className) {
-				const elementClassName = element?.className.split(' ') || [];
-
-				if (elementClassName.includes(className)) {
-					element.className = elementClassName
-						.filter((n) => n !== className)
-						.join(' ');
-				} else {
-					elementClassName.push(className);
-					element.className = elementClassName.join(' ');
-				}
-			}
+import { LitElement, html, css } from '/static/js/dependencies/lit-all.min.js';
+import { toggleClassName } from '/static/js/utils.js';
 
 class OkWindow extends LitElement {
 	static properties = {
@@ -43,7 +31,7 @@ class OkWindow extends LitElement {
 	render() {
 		return html`
 			<div class="inner" title="">
-				<aside class="title" title="" @click="${this._handleClick}">
+				<aside class="title" @click="${this._handleClick}">
 					<div class="inner">
 						<div class="button_group">
 							<a class="button" title="Close and go home" href="/">
@@ -134,7 +122,8 @@ function getStyles() {
 			min-height: 16rem;
 			padding: 2rem;
 			background: var(--title);
-			background: linear-gradient(90deg,
+			background: linear-gradient(
+				90deg,
 				var(--title) 0%,
 				var(--title-darker) 100%
 			);

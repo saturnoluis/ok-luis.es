@@ -12,14 +12,10 @@
 	</head>
 	<body class="light">
 		<main class="desktop">
-			<aside class="desktop__taskbar">
-				<div class="inner">
-					<button id="taskbar-button" class="taskbar__button taskbar__button--hidden">
-						ok-Luis.es - HTML
-					</button>
-				</div>
-			</aside>
-			<section class="desktop__surface">
+			<div class="taskbar-area">
+				<ok-taskbar task-button="ok-Luis.es - HTML"></ok-taskbar>
+			</div>
+			<div class="window-area">
 				<ok-window id="window" title="ok-Luis.es - HTML">
 					<h1>Qué es HTML?</h1>
 <p>HTML es un lenguaje de programación. Un lenguaje de programación es lo que
@@ -51,37 +47,14 @@ expresar tu creatividad a través del código.</p>
 <p><a href="https://www.google.com">Link to Google</a></p>
 
 				</ok-window>
-			</section>
+			</div>
 		</main>
 
-		<script
-			type="module"
-			src="/static/js/components/ok-window/ok-window.js"
-		></script>
+		<script src="/static/js/components/ok-taskbar.js" type="module"></script>
+		<script src="/static/js/components/ok-window.js" type="module"></script>
 
 		<script>
 			window.litDisableBundleWarning = true;
-
-			const okWindow = document.getElementById('window');
-			const taskbarButton = document.getElementById('taskbar-button');
-
-			taskbarButton.addEventListener('click', () => {
-				toggleClassName(okWindow, 'minimize');
-				toggleClassName(taskbarButton, 'taskbar__button--hidden');
-			});
-
-			function toggleClassName(element, className) {
-				const elementClassName = element?.className.split(' ') || [];
-
-				if (elementClassName.includes(className)) {
-					element.className = elementClassName
-						.filter((n) => n !== className)
-						.join(' ');
-				} else {
-					elementClassName.push(className);
-					element.className = elementClassName.join(' ');
-				}
-			}
 		</script>
 	</body>
 </html>

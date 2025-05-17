@@ -12,14 +12,10 @@
 	</head>
 	<body class="light">
 		<main class="desktop">
-			<aside class="desktop__taskbar">
-				<div class="inner">
-					<button id="taskbar-button" class="taskbar__button taskbar__button--hidden">
-						wip
-					</button>
-				</div>
-			</aside>
-			<section class="desktop__surface">
+			<div class="taskbar-area">
+				<ok-taskbar task-button="wip"></ok-taskbar>
+			</div>
+			<div class="window-area">
 				<ok-window id="window" title="wip">
 					<h1>GET handler</h1>
 <p>The first argument to Response can be a ReadableStream, making it possible to
@@ -34,37 +30,14 @@ be customised via src/error.html — depending on the Accept header. The
 about error handling here.</p>
 
 				</ok-window>
-			</section>
+			</div>
 		</main>
 
-		<script
-			type="module"
-			src="/static/js/components/ok-window/ok-window.js"
-		></script>
+		<script src="/static/js/components/ok-taskbar.js" type="module"></script>
+		<script src="/static/js/components/ok-window.js" type="module"></script>
 
 		<script>
 			window.litDisableBundleWarning = true;
-
-			const okWindow = document.getElementById('window');
-			const taskbarButton = document.getElementById('taskbar-button');
-
-			taskbarButton.addEventListener('click', () => {
-				toggleClassName(okWindow, 'minimize');
-				toggleClassName(taskbarButton, 'taskbar__button--hidden');
-			});
-
-			function toggleClassName(element, className) {
-				const elementClassName = element?.className.split(' ') || [];
-
-				if (elementClassName.includes(className)) {
-					element.className = elementClassName
-						.filter((n) => n !== className)
-						.join(' ');
-				} else {
-					elementClassName.push(className);
-					element.className = elementClassName.join(' ');
-				}
-			}
 		</script>
 	</body>
 </html>
