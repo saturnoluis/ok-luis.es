@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    xml:space="preserve"
-   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    sodipodi:docname="download.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,7 +25,7 @@
      inkscape:document-units="px"
      showgrid="true"
      inkscape:zoom="45.254834"
-     inkscape:cx="2.9610097"
+     inkscape:cx="2.9720582"
      inkscape:cy="10.153611"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
@@ -50,9 +50,9 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"><path
-       style="fill:#262873;stroke-width:2;paint-order:fill markers stroke;fill-opacity:1"
+       style="fill:#ffffff;stroke-width:2;paint-order:fill markers stroke;fill-opacity:1"
        d="m 4,9 v 2 h 8 V 9 h 2 v 4 H 2 V 9 Z"
        id="path1" /><path
-       style="fill:#262873;stroke-width:2;paint-order:fill markers stroke;fill-opacity:1"
+       style="fill:#ffffff;stroke-width:2;paint-order:fill markers stroke;fill-opacity:1"
        d="M 9,10 H 7 V 9 H 6 V 8 H 5 V 7 H 7 V 3 h 2 v 4 h 2 V 8 H 10 V 9 H 9 Z"
        id="path2" /></g></svg>

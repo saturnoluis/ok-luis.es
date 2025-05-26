@@ -11,7 +11,10 @@
 	</head>
 	<body>
 		<header>
-			<a href="/static/files/{{ title }}">Download</a>
+			<a href="/static/files/{{ title }}">
+				<img src="/static/img/svg/download.svg" alt="Download my CV">
+				Download
+			</a>
 		</header>
 		<main class="document">{{ content | safe }}</main>
 	</body>

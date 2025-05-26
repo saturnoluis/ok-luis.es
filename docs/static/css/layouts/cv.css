@@ -5,6 +5,7 @@ body {
 	font-family: 'OpenSans', sans-serif;
 	padding-top: 5mm;
 
+	--black: #000000;
 	--blue: #000081;
 	--gray: #c3c3c3;
 	--dark-gray: #808388;
@@ -20,17 +21,17 @@ header {
 }
 
 header a {
-	padding: 4pt 8pt 4pt 22pt;
+	display: flex;
+	flex-direction: row;
+	gap: 2pt;
+	padding: 4pt 8pt;
 	font-size: 12pt;
 	font-family: 'Sysfont', sans-serif;
 	text-decoration: none;
 	line-height: 1em;
 	border: 1pt solid var(--blue);
-	color: var(--blue);
+	color: var(--black);
 	background-color: var(--gray);
-	background-image: url('/static/icons/download.svg');
-	background-repeat: no-repeat;
-	background-position: 8pt;
 	box-shadow:
 		2pt 2pt var(--blue),
 		inset 1pt 1pt var(--light-gray);
@@ -45,6 +46,12 @@ header a:active {
 	box-shadow:
 		1pt 1pt var(--blue),
 		inset -1pt -1pt var(--light-gray);
+}
+
+header a img {
+	filter: invert(1);
+	margin: 0;
+	padding: 0;
 }
 
 @media print {
@@ -234,7 +241,7 @@ header a:active {
 	box-shadow: none;
 	height: 8mm;
 	width: 25mm;
-	background-image: url(/static/img/win95-icons.png);
+	background-image: url(/static/img/cv-footer-icons.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

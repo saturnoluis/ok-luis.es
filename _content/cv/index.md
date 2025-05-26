@@ -3,7 +3,7 @@ title: Luis-Saturno_cv_es.pdf
 layout: layouts/cv.njk
 ---
 
-![Luis Saturno's Avatar](/static/img/avatar.jpg)
+![Luis Saturno's Avatar](/static/img/cv-avatar.jpg)
 {.avatar}
 
 # Luis Saturno

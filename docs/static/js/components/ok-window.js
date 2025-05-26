@@ -16,15 +16,8 @@ class OkWindow extends LitElement {
 		const actions = ['maximize', 'minimize'];
 		const actionId = event.target.id;
 
-		if (!actions.includes(actionId)) {
-			return;
-		}
-
-		toggleClassName(this, actionId);
-
-		if (actionId === 'minimize') {
-			const taskbarButton = document.getElementById('taskbar-button');
-			toggleClassName(taskbarButton, 'taskbar__button--hidden');
+		if (actions.includes(actionId)) {
+			toggleClassName(this, actionId);
 		}
 	}
 
@@ -34,16 +27,15 @@ class OkWindow extends LitElement {
 				<aside class="title" @click="${this._handleClick}">
 					<div class="inner">
 						<div class="button_group">
-							<a class="button" title="Close and go home" href="/">
-								<img alt="Close" src="/static/icons/x.svg" />
+							<a class="button" title="Close" href="/">
+								<img alt="Close" src="/static/img/svg/x.svg" />
 							</a>
 							<button
 								class="button"
 								id="minimize"
-								title="Hide this window"
-								aria-hidden
+								title="Hide"
 							>
-								<img inert src="/static/icons/minimize.svg" />
+								<img inert src="/static/img/svg/minimize.svg" />
 							</button>
 						</div>
 						<span>${this.title}</span>
@@ -52,9 +44,8 @@ class OkWindow extends LitElement {
 								class="button"
 								id="maximize"
 								title="Maximize"
-								aria-hidden
 							>
-								<img inert src="/static/icons/maximize.svg" />
+								<img inert src="/static/img/svg/maximize.svg" />
 							</button>
 						</div>
 					</div>
@@ -75,24 +66,29 @@ customElements.define('ok-window', OkWindow);
 function getStyles() {
 	return css`
 		:host {
-			background-color: var(--surface);
-			border: 1rem solid var(--border);
-			box-shadow: 2rem 2rem var(--surface-shadow-darker);
-			color: var(--text);
-			display: block;
-			height: calc(90% - 24px);
-			width: 80vw;
-			max-width: 64vw;
 			position: absolute;
 			top: 16rem;
 			right: 13%;
+
+			display: block;
+
+			height: calc(90% - 24px);
+			width: 80vw;
+			max-width: 64vw;
 			box-sizing: border-box;
+
+			background-color: var(--surface);
+			border: 1rem solid var(--border);
+			box-shadow: 2rem 2rem var(--surface-shadow-darker);
+
+			color: var(--text);
 		}
 
 		:host(.maximize) {
 			position: relative;
 			top: auto;
 			right: auto;
+
 			height: 100%;
 			width: 100%;
 			max-width: 100vw;
@@ -103,24 +99,28 @@ function getStyles() {
 		}
 
 		:host > .inner {
-			box-shadow: inset 1rem 1rem var(--surface-glow);
-			min-height: 80rem;
 			height: 100%;
+			min-height: 80rem;
+
+			box-shadow: inset 1rem 1rem var(--surface-glow);
 		}
 
 		.title {
 			padding: 2rem;
 			padding-right: 1rem;
+
 			font-family: 'Sysfont', sans-serif;
 		}
 
 		.title > .inner {
-			align-items: center;
 			display: flex;
 			flex-direction: row;
+			align-items: center;
 			justify-content: space-between;
+
 			min-height: 16rem;
 			padding: 2rem;
+
 			background: var(--title);
 			background: linear-gradient(
 				90deg,
@@ -140,6 +140,7 @@ function getStyles() {
 
 		.content > .inner {
 			padding: 2rem;
+
 			font-size: 9rem;
 			line-height: 1.2em;
 		}
@@ -151,23 +152,26 @@ function getStyles() {
 		}
 
 		.button {
+			display: flex;
 			align-items: center;
-			background-color: var(--surface);
+			justify-content: center;
+
+			height: 16rem;
+			width: 16rem;
+
 			border: none;
+			outline: none;
+			background-color: var(--surface);
 			box-shadow: inset 1rem 1rem var(--surface-glow);
 			box-sizing: border-box;
 			cursor: pointer;
-			display: flex;
-			height: 16rem;
-			justify-content: center;
-			outline: none;
 			text-decoration: none;
-			width: 16rem;
 		}
 
 		.button img {
 			display: block;
 			height: 16rem;
+
 			opacity: 0.7;
 			filter: var(--button-filter);
 		}

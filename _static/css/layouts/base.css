@@ -17,35 +17,25 @@ body {
 
 body.dark {
 	--text: #ffffff;
-
-	--surface: #3d3d3d;
-	--surface-glow: #e7e7e7;
-	--surface-shadow: #737173;
-	--surface-shadow-darker: #000000;
-
-	--border: #000000;
-
-	--title: #191919;
-	--title-text: #ededed;
-
-	--button-filter: none;
 }
 
 body.light {
 	--text: #000000;
 
-	--surface: #bdbebd;
-	--surface-glow: #f0f0f0;
-	--surface-shadow: #999999;
-	--surface-shadow-darker: #424242;
+	--surface: #bdc5af;
+	--surface-glow: #ffffff;
+	--surface-shadow: #074a40;
+	--surface-shadow-darker: #050507;
 
 	--border: #050606;
 
-	--title: #1b1a67;
-	--title-darker: #080831;
+	--title: #074a40;
+	--title-darker: #002822;
 	--title-text: #ededed;
 
 	--button-filter: invert();
+
+	--desktop-background: #0a4577;
 }
 
 /*
@@ -60,7 +50,7 @@ body.light {
 
 	height: 100vh;
 	height: 100dvh;
-	background: #008a8c;
+	background: var(--desktop-background);
 }
 
 .desktop .taskbar-area {
