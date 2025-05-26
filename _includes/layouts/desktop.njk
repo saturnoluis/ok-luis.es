@@ -6,19 +6,18 @@
 		<meta name="robots" content="noindex, nofollow" />
 
 		<link rel="stylesheet" href="/static/css/main.css" />
-		<link rel="stylesheet" href="/static/css/layouts/base.css" />
+		<link rel="stylesheet" href="/static/css/layouts/desktop.css" />
 
 		<title>{{ title }}</title>
 	</head>
+
 	<body class="light">
 		<main class="desktop">
 			<div class="taskbar-area">
 				<ok-taskbar task-button="{{ title }}"></ok-taskbar>
 			</div>
-			<div class="window-area">
-				<ok-window id="window" title="{{ title }}">
-					{{ content | safe }}
-				</ok-window>
+			<div class="workspace-area">
+				{{ content | safe }}
 			</div>
 		</main>
 

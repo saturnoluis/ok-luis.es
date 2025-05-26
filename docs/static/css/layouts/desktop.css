@@ -24,7 +24,7 @@ body.light {
 
 	--surface: #bdc5af;
 	--surface-glow: #ffffff;
-	--surface-shadow: #074a40;
+	--surface-shadow: #7a8862;
 	--surface-shadow-darker: #050507;
 
 	--border: #050606;
@@ -58,6 +58,6 @@ body.light {
 	position: relative;
 }
 
-.desktop .window-area {
+.desktop .workspace-area {
 	position: relative;
 }
