@@ -14,18 +14,37 @@
 	<body class="light">
 		<main class="desktop">
 			<div class="taskbar-area">
-				<ok-taskbar task-button="{{ title }}"></ok-taskbar>
+				<ok-taskbar id="desktop-taskbar" task-button="{{ title }}"></ok-taskbar>
 			</div>
 			<div class="workspace-area">
-				{{ content | safe }}
+				<ok-window id="content-window" title="{{ title }}">
+					{{ content | safe }}
+				</ok-window>
 			</div>
 		</main>
 
 		<script src="/static/js/components/ok-taskbar.js" type="module"></script>
 		<script src="/static/js/components/ok-window.js" type="module"></script>
+		<script src="/static/js/utils.js" type="module"></script>
 
 		<script>
 			window.litDisableBundleWarning = true;
+		</script>
+
+		<script type="module">
+			import { toggleClassName } from '/static/js/utils.js';
+
+			const contentWindow = document.getElementById('content-window');
+			const desktopTaskbar = document.getElementById('desktop-taskbar');
+
+			contentWindow.addEventListener('ok-window-minimize', () => {
+				toggleClassName(contentWindow, 'minimize');
+			});
+
+			desktopTaskbar.addEventListener('ok-task-button-click', () => {
+				toggleClassName(contentWindow, 'minimize');
+			});
+
 		</script>
 	</body>
 </html>

@@ -14,13 +14,11 @@
 	<body class="light">
 		<main class="desktop">
 			<div class="taskbar-area">
-				<ok-taskbar task-button="wip"></ok-taskbar>
+				<ok-taskbar id="desktop-taskbar" task-button="wip"></ok-taskbar>
 			</div>
 			<div class="workspace-area">
-				
-<ok-window id="window" title="wip">
-
-<h1>GET handler</h1>
+				<ok-window id="content-window" title="wip">
+					<h1>GET handler</h1>
 <p>The first argument to Response can be a ReadableStream, making it possible to
 stream large amounts of data or create server-sent events (unless deploying to
 platforms that buffer responses, like AWS Lambda).</p>
@@ -32,16 +30,32 @@ be customised via src/error.html — depending on the Accept header. The
 +error.svelte component will not be rendered in this case. You can read more
 about error handling here.</p>
 
-</ok-window>
-
+				</ok-window>
 			</div>
 		</main>
 
 		<script src="/static/js/components/ok-taskbar.js" type="module"></script>
 		<script src="/static/js/components/ok-window.js" type="module"></script>
+		<script src="/static/js/utils.js" type="module"></script>
 
 		<script>
 			window.litDisableBundleWarning = true;
+		</script>
+
+		<script type="module">
+			import { toggleClassName } from '/static/js/utils.js';
+
+			const contentWindow = document.getElementById('content-window');
+			const desktopTaskbar = document.getElementById('desktop-taskbar');
+
+			contentWindow.addEventListener('ok-window-minimize', () => {
+				toggleClassName(contentWindow, 'minimize');
+			});
+
+			desktopTaskbar.addEventListener('ok-task-button-click', () => {
+				toggleClassName(contentWindow, 'minimize');
+			});
+
 		</script>
 	</body>
 </html>

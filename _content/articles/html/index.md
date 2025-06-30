@@ -1,6 +1,6 @@
 ---
 title: ok-Luis.es - HTML
-layout: layouts/window.njk
+layout: layouts/desktop-window.njk
 ---
 
 # Qué es HTML?

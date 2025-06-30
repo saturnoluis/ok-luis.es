@@ -1,6 +1,6 @@
 ---
 title: wip
-layout: layouts/window.njk
+layout: layouts/desktop-window.njk
 ---
 
 # GET handler

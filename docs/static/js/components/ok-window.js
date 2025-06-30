@@ -16,8 +16,12 @@ class OkWindow extends LitElement {
 		const actions = ['maximize', 'minimize'];
 		const actionId = event.target.id;
 
-		if (actions.includes(actionId)) {
-			toggleClassName(this, actionId);
+		if (actionId === 'maximize') {
+			toggleClassName(this, 'maximize');
+		}
+
+		if (actionId === 'minimize') {
+			this.dispatchEvent(new CustomEvent('ok-window-minimize'));
 		}
 	}
 

@@ -15,10 +15,16 @@ class OkTaskbar extends LitElement {
 		super();
 	}
 
+	_handleClick(event) {
+		this.dispatchEvent(new CustomEvent('ok-task-button-click'));
+	}
+
 	render() {
 		return html`
 			<div class="inner">
-				<button id="task-button" class="hidden">${this.taskButton}</button>
+				<button id="task-button" class="hidden" @click="${this._handleClick}">
+					${this.taskButton}
+				</button>
 			</div>
 		`;
 	}
