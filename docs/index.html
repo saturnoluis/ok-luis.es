@@ -14,7 +14,10 @@
 	<body class="light">
 		<main class="desktop">
 			<div class="taskbar-area">
-				<ok-taskbar id="desktop-taskbar" task-button="wip"></ok-taskbar>
+				<ok-taskbar
+					id="desktop-taskbar"
+					task-button="wip"
+				></ok-taskbar>
 			</div>
 			<div class="workspace-area">
 				<ok-window id="content-window" title="wip">
@@ -31,11 +34,16 @@ be customised via src/error.html — depending on the Accept header. The
 about error handling here.</p>
 
 				</ok-window>
+				<ok-desktop-icons></ok-desktop-icons>
 			</div>
 		</main>
 
 		<script src="/static/js/components/ok-taskbar.js" type="module"></script>
 		<script src="/static/js/components/ok-window.js" type="module"></script>
+		<script
+			src="/static/js/components/ok-desktop-icons.js"
+			type="module"
+		></script>
 		<script src="/static/js/utils.js" type="module"></script>
 
 		<script>
@@ -55,7 +63,6 @@ about error handling here.</p>
 			desktopTaskbar.addEventListener('ok-task-button-click', () => {
 				toggleClassName(contentWindow, 'minimize');
 			});
-
 		</script>
 	</body>
 </html>

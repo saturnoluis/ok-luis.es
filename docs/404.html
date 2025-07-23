@@ -14,18 +14,26 @@
 	<body class="light">
 		<main class="desktop">
 			<div class="taskbar-area">
-				<ok-taskbar id="desktop-taskbar" task-button="ok-Luis.es - 404"></ok-taskbar>
+				<ok-taskbar
+					id="desktop-taskbar"
+					task-button="ok-Luis.es - 404"
+				></ok-taskbar>
 			</div>
 			<div class="workspace-area">
 				<ok-window id="content-window" title="ok-Luis.es - 404">
 					<h1>404 Upsie daisy</h1>
 
 				</ok-window>
+				<ok-desktop-icons></ok-desktop-icons>
 			</div>
 		</main>
 
 		<script src="/static/js/components/ok-taskbar.js" type="module"></script>
 		<script src="/static/js/components/ok-window.js" type="module"></script>
+		<script
+			src="/static/js/components/ok-desktop-icons.js"
+			type="module"
+		></script>
 		<script src="/static/js/utils.js" type="module"></script>
 
 		<script>
@@ -45,7 +53,6 @@
 			desktopTaskbar.addEventListener('ok-task-button-click', () => {
 				toggleClassName(contentWindow, 'minimize');
 			});
-
 		</script>
 	</body>
 </html>

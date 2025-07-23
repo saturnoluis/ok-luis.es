@@ -34,21 +34,13 @@ class OkWindow extends LitElement {
 							<a class="button" title="Close" href="/">
 								<img alt="Close" src="/static/img/svg/x.svg" />
 							</a>
-							<button
-								class="button"
-								id="minimize"
-								title="Hide"
-							>
+							<button class="button" id="minimize" title="Hide">
 								<img inert src="/static/img/svg/minimize.svg" />
 							</button>
 						</div>
 						<span>${this.title}</span>
 						<div class="button_group">
-							<button
-								class="button"
-								id="maximize"
-								title="Maximize"
-							>
+							<button class="button" id="maximize" title="Maximize">
 								<img inert src="/static/img/svg/maximize.svg" />
 							</button>
 						</div>
@@ -73,6 +65,7 @@ function getStyles() {
 			position: absolute;
 			top: 16rem;
 			right: 13%;
+			z-index: 1000;
 
 			display: block;
 

@@ -22,7 +22,11 @@ class OkTaskbar extends LitElement {
 	render() {
 		return html`
 			<div class="inner">
-				<button id="task-button" class="hidden" @click="${this._handleClick}">
+				<button
+					id="task-button"
+					class="hidden"
+					@click="${this._handleClick}"
+				>
 					${this.taskButton}
 				</button>
 			</div>

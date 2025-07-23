@@ -21,6 +21,7 @@ body.dark {
 
 body.light {
 	--text: #000000;
+	--text-invert: #ffffff;
 
 	--surface: #bdc5af;
 	--surface-glow: #ffffff;
