@@ -14,6 +14,19 @@ class OkTaskbar extends LitElement {
 	constructor() {
 		super();
 	}
+	
+	firstUpdated() {
+		super.connectedCallback();
+
+		if(this.hasAttribute('task-button')) {
+			const taskButtonContent = this.getAttribute('task-button');
+
+			if (taskButtonContent.length > 0) {
+				const taskButton = this.renderRoot.getElementById('task-button');
+				toggleClassName(taskButton, 'display-block');
+			}
+		}
+	}
 
 	_handleClick(event) {
 		this.dispatchEvent(new CustomEvent('ok-task-button-click'));
@@ -24,7 +37,7 @@ class OkTaskbar extends LitElement {
 			<div class="inner">
 				<button
 					id="task-button"
-					class="hidden"
+					class="task-button"
 					@click="${this._handleClick}"
 				>
 					${this.taskButton}
@@ -58,7 +71,7 @@ function getStyles() {
 		}
 
 		#task-button {
-			display: block;
+			display: none;
 			color: var(--text);
 			background: var(--surface);
 			font-family: 'Sysfont', sans-serif;
@@ -70,6 +83,10 @@ function getStyles() {
 			box-shadow:
 				inset -1rem -1rem var(--surface-shadow-darker),
 				inset 1rem 1rem var(--surface-glow);
+		}
+
+		#task-button.display-block {
+			display: block;
 		}
 
 		#task-button:active {
