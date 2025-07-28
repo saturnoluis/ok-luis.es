@@ -64,14 +64,14 @@ function getStyles() {
 		:host {
 			position: absolute;
 			top: 16rem;
-			right: 13%;
+			left: 80rem;
 			z-index: 1000;
 
 			display: block;
 
-			height: calc(90% - 24px);
+			height: calc(100vh - 48rem);
 			width: 80vw;
-			max-width: 64vw;
+
 			box-sizing: border-box;
 
 			background-color: var(--surface);
@@ -84,11 +84,10 @@ function getStyles() {
 		:host(.maximize) {
 			position: relative;
 			top: auto;
-			right: auto;
+			left: auto;
 
-			height: 100%;
+			height: calc(100vh - 22rem);
 			width: 100%;
-			max-width: 100vw;
 		}
 
 		:host(.minimize) {
@@ -127,16 +126,18 @@ function getStyles() {
 		}
 
 		.title > .inner span {
-			font-size: 12rem;
+			font-size: 10rem;
 			color: var(--title-text);
 		}
 
 		.content {
-			padding: 0 2rem;
+			padding: 1rem;
+			height: calc(100% - 28rem);
+			overflow: auto;
 		}
 
 		.content > .inner {
-			padding: 2rem;
+			padding: 0 2rem;
 
 			font-size: 9rem;
 			line-height: 1.2em;
