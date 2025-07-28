@@ -13,7 +13,7 @@ test.describe('Generate pdf documents', () => {
 		await expect(title).toBeVisible();
 
 		await page.pdf({
-			path: `_static/files/Luis-Saturno_cv_es.pdf`,
+			path: `_src/files/Luis-Saturno_cv_es.pdf`,
 			width: '210mm',
 			height: '297mm',
 			margin: {
@@ -38,7 +38,7 @@ test.describe('Generate pdf documents', () => {
 		await expect(title).toBeVisible();
 
 		await page.pdf({
-			path: `_static/files/Luis-Saturno_cv_en.pdf`,
+			path: `_src/files/Luis-Saturno_cv_en.pdf`,
 			width: '210mm',
 			height: '297mm',
 			margin: {
