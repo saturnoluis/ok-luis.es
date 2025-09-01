@@ -23,15 +23,15 @@ body.light {
 	--text: #000000;
 	--text-invert: #ffffff;
 
-	--surface: #bdc5af;
+	--surface: #bdbdbd;
 	--surface-glow: #ffffff;
-	--surface-shadow: #7a8862;
-	--surface-shadow-darker: #050507;
+	--surface-shadow: #7a7a7a;
+	--surface-shadow-darker: #050505;
 
-	--border: #050606;
+	--border: #050505;
 
 	--title: #074a40;
-	--title-darker: #002822;
+	--title-darker: #020202;
 	--title-text: #ededed;
 
 	--button-filter: invert();

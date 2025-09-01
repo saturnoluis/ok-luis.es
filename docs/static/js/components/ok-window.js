@@ -138,6 +138,7 @@ function getStyles() {
 
 	.content > .inner {
 		padding: 0 2rem;
+		margin: 0 2rem;
 
 		font-size: 9rem;
 		line-height: 1.2em;
