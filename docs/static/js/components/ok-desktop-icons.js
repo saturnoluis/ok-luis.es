@@ -10,20 +10,20 @@ class OkDesktopIcons extends LitElement {
 
 	render() {
 		return html`
-		<div class="inner">
-			<a href="/desktop" class="desktop-icon" title="¿Quién soy?">
-				<img src="/static/img/icon-about-me.png" alt="¿Quién soy?" />
-				<span>¿Quién soy?</span>
-			</a>
-			<a href="/articles" class="desktop-icon" title="Artículos">
-				<img src="/static/img/icon-articles.png" alt="Artículos" />
-				<span>Artículos</span>
-			</a>
-			<a href="/my-links" class="desktop-icon" title="Enlaces">
-				<img src="/static/img/icon-my-links.png" alt="Enlaces" />
-				<span>Enlaces</span>
-			</a>
-		</div>
+			<div class="inner">
+				<a href="/quien-soy-yo" class="desktop-icon" title="¿Quién soy yo?">
+					<img src="/static/img/icon-about-me.png" alt="¿Quién soy yo?" />
+					<span>¿Quién soy yo?</span>
+				</a>
+				<a href="/articles" class="desktop-icon" title="Artículos">
+					<img src="/static/img/icon-articles.png" alt="Artículos" />
+					<span>Artículos</span>
+				</a>
+				<a href="/my-links" class="desktop-icon" title="Enlaces">
+					<img src="/static/img/icon-my-links.png" alt="Enlaces" />
+					<span>Enlaces</span>
+				</a>
+			</div>
 		`;
 	}
 }

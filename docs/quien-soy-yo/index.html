@@ -8,20 +8,28 @@
 		<link rel="stylesheet" href="/static/css/main.css" />
 		<link rel="stylesheet" href="/static/css/layouts/desktop.css" />
 
-		<title>{{ title }}</title>
+		<title>¿Quién soy yo?</title>
 	</head>
 
 	<body class="light">
 		<main class="desktop">
 			<div class="taskbar-area">
-				<ok-taskbar id="desktop-taskbar" task-button=""></ok-taskbar>
+				<ok-taskbar
+					id="desktop-taskbar"
+					task-button="¿Quién soy yo?"
+				></ok-taskbar>
 			</div>
 			<div class="workspace-area">
+				<ok-window id="content-window" title="¿Quién soy yo?">
+					<h1>¿Quién soy yo?</h1>
+
+				</ok-window>
 				<ok-desktop-icons></ok-desktop-icons>
 			</div>
 		</main>
 
 		<script src="/static/js/components/ok-taskbar.js" type="module"></script>
+		<script src="/static/js/components/ok-window.js" type="module"></script>
 		<script
 			src="/static/js/components/ok-desktop-icons.js"
 			type="module"
@@ -30,6 +38,21 @@
 
 		<script>
 			window.litDisableBundleWarning = true;
+		</script>
+
+		<script type="module">
+			import { toggleClassName } from '/static/js/utils.js';
+
+			const contentWindow = document.getElementById('content-window');
+			const desktopTaskbar = document.getElementById('desktop-taskbar');
+
+			contentWindow.addEventListener('ok-window-minimize', () => {
+				toggleClassName(contentWindow, 'minimize');
+			});
+
+			desktopTaskbar.addEventListener('ok-task-button-click', () => {
+				toggleClassName(contentWindow, 'minimize');
+			});
 		</script>
 	</body>
 </html>

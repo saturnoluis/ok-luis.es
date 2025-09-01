@@ -14,11 +14,11 @@ class OkTaskbar extends LitElement {
 	constructor() {
 		super();
 	}
-	
+
 	firstUpdated() {
 		super.connectedCallback();
 
-		if(this.hasAttribute('task-button')) {
+		if (this.hasAttribute('task-button')) {
 			const taskButtonContent = this.getAttribute('task-button');
 
 			if (taskButtonContent.length > 0) {
