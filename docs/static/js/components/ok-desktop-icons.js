@@ -1,5 +1,7 @@
 import { LitElement, html, css } from '/static/js/dependencies/lit-all.min.js';
 import { toggleClassName } from '/static/js/utils.js';
+import { desktopIcons } from '../constants.js';
+import { map } from '/static/js/dependencies/lit-all.min.js';
 
 class OkDesktopIcons extends LitElement {
 	static styles = getStyles();
@@ -11,18 +13,18 @@ class OkDesktopIcons extends LitElement {
 	render() {
 		return html`
 			<div class="inner">
-				<a href="/quien-soy-yo" class="desktop-icon" title="¿Quién soy yo?">
-					<img src="/static/img/icon-about-me.png" alt="¿Quién soy yo?" />
-					<span>¿Quién soy yo?</span>
-				</a>
-				<a href="/articles" class="desktop-icon" title="Artículos">
-					<img src="/static/img/icon-articles.png" alt="Artículos" />
-					<span>Artículos</span>
-				</a>
-				<a href="/my-links" class="desktop-icon" title="Enlaces">
-					<img src="/static/img/icon-my-links.png" alt="Enlaces" />
-					<span>Enlaces</span>
-				</a>
+				${desktopIcons.map(
+					(icon) => html`
+						<a
+							href="${icon.href}"
+							class="desktop-icon"
+							title="${icon.label}"
+						>
+							<img src="${icon.img}" alt="${icon.alt}" />
+							<span>${icon.label}</span>
+						</a>
+					`,
+				)}
 			</div>
 		`;
 	}

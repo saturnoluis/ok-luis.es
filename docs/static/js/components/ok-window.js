@@ -4,12 +4,36 @@ import { toggleClassName } from '/static/js/utils.js';
 class OkWindow extends LitElement {
 	static properties = {
 		title: { type: String },
+		width: { type: String },
+		height: { type: String },
+		top: { type: String },
+		left: { type: String },
 	};
 
 	static styles = getStyles();
 
 	constructor() {
 		super();
+		this.width = this.width || '60vw';
+		this.height = this.height || 'calc(100vh - 48rem)';
+		this.top = this.top || '16rem';
+		this.left = this.left || '80rem';
+	}
+
+	updated(changedProperties) {
+		super.updated(changedProperties);
+		if (changedProperties.has('width')) {
+			this.style.width = this.width;
+		}
+		if (changedProperties.has('height')) {
+			this.style.height = this.height;
+		}
+		if (changedProperties.has('top')) {
+			this.style.top = this.top;
+		}
+		if (changedProperties.has('left')) {
+			this.style.left = this.left;
+		}
 	}
 
 	_handleClick(event) {
@@ -63,14 +87,9 @@ function getStyles() {
 	return css`
 		:host {
 			position: absolute;
-			top: 16rem;
-			left: 80rem;
 			z-index: 1000;
 
 			display: block;
-
-			height: calc(100vh - 48rem);
-			width: 80vw;
 
 			box-sizing: border-box;
 
@@ -191,11 +210,11 @@ function getStyles() {
 		@media (max-width: 880px) {
 			:host {
 				position: relative;
-				top: auto;
-				left: auto;
 
-				height: calc(100vh - 22rem);
-				width: 100%;
+				top: auto !important;
+				left: auto !important;
+				height: calc(100vh - 22rem) !important;
+				width: 100% !important;
 			}
 
 			#maximize {
