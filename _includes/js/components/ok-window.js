@@ -153,6 +153,9 @@ function getStyles() {
 			padding: 1rem;
 			height: calc(100% - 28rem);
 			overflow: auto;
+
+			container-type: inline-size;
+			container-name: ok-window-content;
 		}
 
 		.content > .inner {
