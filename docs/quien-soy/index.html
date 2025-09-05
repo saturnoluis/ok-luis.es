@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex, nofollow" />
+
+		<link rel="stylesheet" href="/static/css/main.css" />
+		<link rel="stylesheet" href="/static/css/layouts/desktop.css" />
+
+		<title>¿Quién soy?</title>
+	</head>
+
+	<body class="light">
+		<main class="desktop">
+			<div class="taskbar-area">
+				<ok-taskbar
+					id="desktop-taskbar"
+					task-button="¿Quién soy?"
+				></ok-taskbar>
+			</div>
+			<div class="workspace-area">
+				<ok-window id="content-window" title="¿Quién soy?" width="50vw" height="60vh" top="10rem" left="20rem">
+					<h1>¿Quién soy?</h1>
+
+				</ok-window>
+				<ok-desktop-icons></ok-desktop-icons>
+			</div>
+		</main>
+
+		<script src="/static/js/components/ok-taskbar.js" type="module"></script>
+		<script src="/static/js/components/ok-window.js" type="module"></script>
+		<script
+			src="/static/js/components/ok-desktop-icons.js"
+			type="module"
+		></script>
+		<script src="/static/js/utils.js" type="module"></script>
+
+		<script>
+			window.litDisableBundleWarning = true;
+		</script>
+
+		<script type="module">
+			import { toggleClassName } from '/static/js/utils.js';
+
+			const contentWindow = document.getElementById('content-window');
+			const desktopTaskbar = document.getElementById('desktop-taskbar');
+
+			contentWindow.addEventListener('ok-window-minimize', () => {
+				toggleClassName(contentWindow, 'minimize');
+			});
+
+			desktopTaskbar.addEventListener('ok-task-button-click', () => {
+				toggleClassName(contentWindow, 'minimize');
+			});
+		</script>
+	</body>
+</html>
