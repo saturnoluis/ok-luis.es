@@ -14,25 +14,21 @@ class OkWindow extends LitElement {
 
 	constructor() {
 		super();
-		this.width = this.width || '60vw';
-		this.height = this.height || 'calc(100vh - 48rem)';
-		this.top = this.top || '16rem';
-		this.left = this.left || '80rem';
 	}
 
 	updated(changedProperties) {
 		super.updated(changedProperties);
 		if (changedProperties.has('width')) {
-			this.style.width = this.width;
+			this.style.width = this.width || 'calc(100dvw - 192rem)';
 		}
 		if (changedProperties.has('height')) {
-			this.style.height = this.height;
+			this.style.height = this.height || '80dvh';
 		}
 		if (changedProperties.has('top')) {
-			this.style.top = this.top;
+			this.style.top = this.top || '4dvh';
 		}
 		if (changedProperties.has('left')) {
-			this.style.left = this.left;
+			this.style.left = this.left || '96rem';
 		}
 	}
 
@@ -75,7 +71,6 @@ class OkWindow extends LitElement {
 						<slot></slot>
 					</div>
 				</section>
-				<div></div>
 			</div>
 		`;
 	}
@@ -90,11 +85,12 @@ function getStyles() {
 			z-index: 1000;
 			min-width: 200rem;
 			min-height: 160rem;
+			max-height: calc(100dvh - var(--taskbar-height));
 
 			display: block;
 
 			box-sizing: border-box;
-			overflow: auto;
+			overflow: hidden;
 			resize: both;
 
 			background-color: var(--surface);
