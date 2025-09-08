@@ -88,10 +88,14 @@ function getStyles() {
 		:host {
 			position: absolute;
 			z-index: 1000;
+			min-width: 200rem;
+			min-height: 160rem;
 
 			display: block;
 
 			box-sizing: border-box;
+			overflow: auto;
+			resize: both;
 
 			background-color: var(--surface);
 			border: 1rem solid var(--border);
@@ -213,6 +217,8 @@ function getStyles() {
 		@media (max-width: 880px) {
 			:host {
 				position: relative;
+				min-width: auto;
+				min-height: auto;
 
 				top: auto !important;
 				left: auto !important;
