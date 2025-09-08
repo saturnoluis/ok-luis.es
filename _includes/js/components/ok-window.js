@@ -102,11 +102,11 @@ function getStyles() {
 
 		:host(.maximize) {
 			position: relative;
-			top: auto;
-			left: auto;
+			top: auto !important;
+			left: auto !important;
 
-			height: calc(100vh - 22rem);
-			width: 100%;
+			height: calc(100vh - 22rem) !important;
+			width: 100% !important;
 		}
 
 		:host(.minimize) {
