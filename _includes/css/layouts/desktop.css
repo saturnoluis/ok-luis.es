@@ -63,3 +63,16 @@ body.light {
 .desktop .workspace-area {
 	position: relative;
 }
+
+/*
+* Images
+* ******/
+
+.image-small {
+	width: 200rem;
+	float: left;
+	margin: 8rem;
+	border: 1rem solid var(--border);
+	box-shadow: inset 2rem 2rem var(--surface-glow);
+	display: block;
+}
