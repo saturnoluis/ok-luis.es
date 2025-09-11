@@ -6,7 +6,7 @@
 	"license": "GPL-3.0-or-later",
 	"description": "",
 	"scripts": {
-		"serve": "eleventy --serve",
+		"dev": "eleventy --serve",
 		"build": "eleventy",
 		"build:pdf": "eleventy && playwright test",
 		"format": "npx prettier . --write && npm run format:njk",
